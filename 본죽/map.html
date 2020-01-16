@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,3,4,5];
+        // numbers = numbers.map(res => res*10);
+        var result = numbers.filter(res => {
+            return res <3;
+        });
+
+        var cart = [
+            {id:1, name: '바지1', type:1, check:true},
+            {id:1, name: '바지2', type:1, check:false},
+            {id:1, name: '바지3', type:2, check:false},
+            {id:1, name: '바지4', type:2, check:true},
+            {id:1, name: '바지5', type:3, check:true},
+        ]
+        
+        var result2 = cart.filter(res => {
+            return res.check === false;
+        }); 
+
+        console.log(result2);
+        
+        var top2 = cart.filter(res => {
+            return res.type === 2;
+        });
+
+        console.log(top2);
+    </script>
+</body>
+</html>
