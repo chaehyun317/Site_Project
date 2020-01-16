@@ -1,0 +1,98 @@
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<style>
+		h1#findMe{
+			background: yellowgreen;
+		}
+		.red{
+			transition: .2s;
+			margin-left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1>sdfad</h1>
+	<h1 id="findMe">나를 찾아보세요</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+	<h1>sadfa</h1>
+
+	<script>
+		$(document).ready(function(){
+			var position = $('#findMe').offset().top;
+			var scrollTop;
+			console.log(position);
+			
+
+			$(window).scroll(function(){
+				scrollTop = $(window).scrollTop();
+				if(position < scrollTop + 500){
+					$("#findMe").addClass('red');
+				}
+			})
+		});
+	</script>
+
+</body>
+</html>
