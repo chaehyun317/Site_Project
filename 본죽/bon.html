@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <div id="wrapper">
         <div id="gnbwrap">
             <div class="innerwrap">
@@ -17,15 +19,101 @@
                     <div class="logo"></div>
                     <div class="gnb">
                         <ul>
-                            <li>본아이에프</li>
-                            <li>본죽</li>
-                            <li>본죽&비빔밥cafe</li>
-                            <li>본도시락</li>
-                            <li>본설</li>
-                            <li>베이비본죽</li>
-                            <li>본몰</li>
-                            <li>창업안내</li>
-                        </ul>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">본아이에프</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">회사소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">경영이념</a></li> 
+                                    <li><a href="" class="submenuLink longLink">소식보기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">사회공헌</a></li> 
+                                    <li><a href="" class="submenuLink longLink">인재채용</a></li> 
+                                    <li><a href="" class="submenuLink longLink">윤리경영</a></li> 
+                                </ul>
+                            </li>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">본죽</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">브랜드소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">메뉴소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">매장찾기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">이벤트</a></li> 
+                                    <li><a href="" class="submenuLink longLink">주문하기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">창업</a></li> 
+                                </ul>
+                            </li>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">본죽&비빔밥cafe</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">브랜드소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">메뉴소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">매장찾기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">이벤트</a></li> 
+                                    <li><a href="" class="submenuLink longLink">주문하기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">창업</a></li> 
+                                </ul>
+                            </li>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">본도시락</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">브랜드소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">메뉴소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">매장찾기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">이벤트</a></li> 
+                                    <li><a href="" class="submenuLink longLink">주문하기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">창업</a></li> 
+                                </ul>
+                            </li>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">본설</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">브랜드소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">메뉴소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">매장찾기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">이벤트</a></li> 
+                                    <li><a href="" class="submenuLink longLink">주문하기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">창업</a></li> 
+                                </ul>
+                            </li>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">베이비본죽</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">브랜드소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">메뉴소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">본푸드랩소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">주문하기</a></li>
+                                </ul>
+                            </li>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">본몰</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">브랜드소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">메뉴소개</a></li> 
+                                    <li><a href="" class="submenuLink longLink">쇼핑혜택</a></li> 
+                                    <li><a href="" class="submenuLink longLink">주문하기</a></li> 
+                                    <li><a href="" class="submenuLink longLink">대략주문</a></li> 
+                                </ul>
+                            </li>
+                            <li class="topMenuLi">
+                                <a href="" class="menuLink">창업안내</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenuLink longLink">창업안내</a></li> 
+                                    <li><a href="" class="submenuLink longLink">창업상담</a></li> 
+                                    <li><a href="" class="submenuLink longLink">창업설명회</a></li> 
+                                    <li><a href="" class="submenuLink longLink">성공스토리</a></li> 
+                                    <li><a href="" class="submenuLink longLink">추천상권</a></li> 
+                                    <li><a href="" class="submenuLink longLink">창업소식</a></li> 
+                                </ul>
+                            </li>
+                            <!-- <li>본아이에프</li>
+                                <li>본죽</li>
+                                <li>본죽&비빔밥cafe</li>
+                                <li>본도시락</li>
+                                <li>본설</li>
+                                <li>베이비본죽</li>
+                                <li>본몰</li>
+                                <li>창업안내</li> -->
+                            </ul>
+                        <!-- <div class="bg"></div> -->
                     </div>
                     <div class="gnb2">
                         <div class="innergnb2">
@@ -37,23 +125,18 @@
                     </div>
                 </div>
             </div>
-            <div class="banner">
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-            </div>
-                <div class="banner_btn">
-                    <div class="btn1 active"></div>
-                    <div class="btn2"></div>
-                    <div class="btn3"></div>
-                    <div class="btn4"></div>
-                    <div class="btn5"></div>
+             <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                    <div class="swiper-slide slide4"></div>
+                    <div class="swiper-slide slide5"></div>
                 </div>
-            <script src="js/banner_slide.js"></script>
-            <button id="next2">다음</button>
-            <button id="prev2">이전</button>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
             <div class="main_order_box">
                 <div class="main_order">
                     <dl>
@@ -83,7 +166,21 @@
                     <p>본과 함께하는 일상</p>
                 </h2>
                 <div class="sec1">
-                    <div class="sec1_right"></div>
+                    <div class="sec1_right">
+                        <div class="sec1_txt">
+                            <span>본죽</span>
+                            <p>죽이 요리가 되는<br>선물같은 시간</p>
+                            <hr>
+                            <div class="p2">
+                                재료 본연의 맛과 식감을 가장 빨리 잘 즐길 수 있는<br>
+                                일품 별미 요리, [본죽 시그니처]를 통해<br>
+                                찾고, 먹고, 경험하고 싶은 맛집으로 새롭게 찾아 갑니다.
+                            </div>
+                            <div class="sec1_btn">
+                                <span>자세히 보기</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="sec1_left">
                         <div class="sec1_left2">
                             <div class="sec1_left3">
@@ -94,7 +191,21 @@
                     </div>
                 </div>
                 <div class="sec2">
-                    <div class="sec2_left"></div>
+                    <div class="sec2_left">
+                        <div class="sec2_txt">
+                            <span>본죽&비빔밥cafe</span>
+                            <p>한식으로 함께<br>한 곳에서 함께</p>
+                            <hr>
+                            <div class="p2">
+                                다채로운 한식을 만나는 새로운 공간.<br>
+                                새로운 죽과 비빔밥,<br>
+                                더 풍성하고 맛있는 우리 음식 이야기를 만나보세요.
+                            </div>
+                            <div class="sec2_btn">
+                                <span>자세히 보기</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="sec2_right">
                         <div class="sec2_right2">
                             <div class="sec2_right3">
@@ -105,7 +216,20 @@
                     </div>
                 </div>
                 <div class="sec3">
-                    <div class="sec3_right"></div>
+                    <div class="sec3_right">
+                        <div class="sec1_txt">
+                            <span>본도시락</span>
+                            <p>생일을 맞는 당신만을 위한<br>특별한 한상차림</p>
+                            <hr>
+                            <div class="p2">
+                                미역국과 케이크, 생일축하 메시지까지,<br>
+                                도시락 가득 담은 축하의 마음을 전달해보세요.
+                            </div>
+                            <div class="sec1_btn">
+                                <span>자세히 보기</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="sec3_left">
                         <div class="sec3_left2">
                             <div class="sec3_left3">
@@ -116,7 +240,20 @@
                     </div>
                 </div>
                 <div class="sec4">
-                    <div class="sec4_left"></div>
+                    <div class="sec4_left">
+                        <div class="sec2_txt">
+                            <span>본설</span>
+                            <p>기존에 없던 새로운 경험,<br>설레는 새로움</p>
+                            <hr>
+                            <div class="p2">
+                                백, 호, 황 3가지 육수와 밥, 면, 만두 3가지 구성으로<br>
+                                취향에 따라 조합하는 9가지 맛과 즐거움을 만나보세요.
+                            </div>
+                            <div class="sec2_btn">
+                                <span>자세히 보기</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="sec4_right">
                         <div class="sec4_right2">
                             <div class="sec4_right3">
@@ -132,13 +269,49 @@
                     <span>Bon Start</span>
                     <p>맛있는 도전, 성공 스토리</p>
                 </h2>
+                <div class="swiper-container newSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide6"></div>
+                        <div class="swiper-slide slide7"></div>
+                        <div class="swiper-slide slide8"></div>
+                        <div class="swiper-slide slide9"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="sec6">
                 <h2>
                     <span>Bon New Menu</span>
                     <p>건강한 맛, 신메뉴 추천</p>
                 </h2>
-                <div class="sec6_inner"></div>
+                <div class="sec6_inner">
+                    <div class="sec6_left">
+                        <div class="sec6_txt">
+                            <span>본설</span>
+                            <p>우삼겹곱창전골(2인)</p>
+                            <div class="p3">
+                                얼큰한 육수에 쫄깃한 식감
+                            </div>
+                            <div class="sec6_btn">
+                                <span>자세히 보기</span>
+                            </div>
+                            <ul class="sec6_list">
+                                <li><img src="../본죽/img/sec6_2.jpg" alt=""></li>
+                                <li><img src="../본죽/img/sec6_3.jpg" alt=""></li>
+                                <li><img src="../본죽/img/sec6_4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec6_right">
+                        <div class="sec6_right2">
+                            <div class="sec6_right3">
+                                <div class="sec6_right4"></div>
+                            </div>
+                            <div class="sec6_right5"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="sec7">
                 <h2>
@@ -166,7 +339,7 @@
                         <div class="sec8_box_t">
                             <h3>공지사항</h3>
                             <p>•••</p>
-                        <div class="sec8_box_b">
+                            <div class="sec8_box_b">
                             <div class="sec8_box_b2">
                                 [공지]본죽&비빔밥cafe원산지 안내
                                 (2020년 1월 2일 기준)
@@ -175,13 +348,13 @@
                         </div>
                         <div id="prev"></div>
                         <div id="next"></div>
-                        </div>
                     </div>
+                </div>
                     <div class="sec8_box">
                         <div class="sec8_box_t">
                             <h3>보도자료</h3>
                             <p>•••</p>
-                        <div class="sec8_box_b">
+                            <div class="sec8_box_b">
                             <div class="sec8_box_b2">
                                 본아이에프 본몰,'통단팥죽 기부세
                                 트'로 매칭 기부 진행
@@ -196,7 +369,7 @@
                         <div class="sec8_box_t">
                             <h3>나눔뉴스</h3>
                             <p>•••</p>
-                        <div class="sec8_box_b">
+                            <div class="sec8_box_b">
                             <div class="sec8_box_b2">
                                 어르신 동지팥죽 사랑나눔 행사
                             </div>
@@ -204,7 +377,7 @@
                         </div>
                         <div id="prev"></div>
                         <div id="next"></div>
-                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -272,35 +445,7 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function(){
-            var index = 0;
-            var timer = 800;
-            var length = $('.slide').length;
-
-        $(document).on('click', '#next2', function(){
-            next2();
-        });
-
-        $(document).on('click', '#prev2', function(){
-            prev2();
-        });
-
-        function next2(){
-            $('.slide').eq(index).animate({
-                left: '-100%'
-            }, timer);
-
-            index++;
-            index = index % length;
-
-            $('.slide').eq(index).css({
-                left: '100%'
-            }).animate({
-                left: '0%'
-            }, timer);
-        }
-        });
-    </script>
+    <script src="js/banner_slide.js"></script>
+    <script src="js/newslide.js"></script>
 </body>
 </html>
