@@ -43,35 +43,59 @@ $(document).ready(function(){
     var html = '';
     var txt = '';
     var bestTag = ''; 
+    var view = [];
+    view = pdt;
 
-    for(var i in pdt){
-        bestTag = '';
-        id = pdt[i].id;
-        name = pdt[i].name;
-        price = pdt[i].price;
-        src = pdt[i].src;
-        best2 = pdt[i].best;
+    getItem(view);
 
-        if(best2){
-            bestTag = `<span class="best">BEST</span>`;
+    var menuIdx;
+
+    $(document).on('click', '#cateList .menu', function(){
+        menuIdx = $(this).index();
+        view = [];
+        if(menuIdx === 0){
+            view = pdt;
+        }else{
+            view = pdt.filter(function(item){
+                return item.type === menuIdx;
+            });
         }
+        console.log(view);
+        getItem(view);
+    });
 
-        txt =
-        `<div class='item'>`+bestTag+`
-            <input type='hidden' class="itemId" value="${id}">
-            <div class='img'>
-                <img src='img2/${src}'>
-            </div>
-            <div class='name'>
-                ${name}
-            </div>
-            <div class='price'>
-                `+comma(price)+`원`+`
-            </div>
-        </div>`;
-        html = html + txt;
+    function getItem(viewArr){
+        html = '';
+        txt = '';
+        for(var i in viewArr){
+            bestTag = '';
+            id = pdt[i].id;
+            name = pdt[i].name;
+            price = pdt[i].price;
+            src = pdt[i].src;
+            best2 = pdt[i].best;
+    
+            if(best2){
+                bestTag = `<span class="best">BEST</span>`;
+            }
+    
+            txt =
+            `<div class='item'>`+bestTag+`
+                <input type='hidden' class="itemId" value="${id}">
+                <div class='img'>
+                    <img src='img2/${src}'>
+                </div>
+                <div class='name'>
+                    ${name}
+                </div>
+                <div class='price'>
+                    `+comma(price)+`원`+`
+                </div>
+            </div>`;
+            html = html + txt;
+        }
+        $('.container').html(html);
     }
-    $('.container').html(html);
 
     function comma(num){
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

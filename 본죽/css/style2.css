@@ -208,6 +208,10 @@
 .tabRow{
     display: table-row;
 }
+.tabRow a{
+    cursor: pointer;
+    user-select: none;
+}
 .tabBrand .tabRow > a.on{
     color: #222;
     font-weight: 500;
