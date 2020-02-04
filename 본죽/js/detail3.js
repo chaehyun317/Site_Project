@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var pdt = [
-        { id:61, type: 4, name:"(세트) 짬뽕순두부 도시락", price: 8200, src:"img61.jpg", best:true, desc: "몽글몽글 순두부와 화끈한 불(火) 맛 짬뽕의 환상 케미", viewOne:"img61.jpg", viewTwo:"img61_2.jpg", detailImg:"img61_3.jpg", 
+        { id:61, type: 4, name:"(세트) 짬뽕순두부 도시락", price: 8200, src:"img61.jpg", best:false, desc: "몽글몽글 순두부와 화끈한 불(火) 맛 짬뽕의 환상 케미", viewOne:"img61.jpg", viewTwo:"img61_2.jpg", detailImg:"img61_3.jpg", 
             summary: "술 마신 다음날이면 더욱 생각나는<br>쓰라린 속을 위로해 줄 해장 도시락!<br>순하고 부드러운 몽글몽글 순두부와<br>불 맛으로 잡은 짬뽕 국물의 만남.<br>나를 깨우는 오늘의 해장으로 어떠세요?", half1:"img61_4.jpg", half2:"img61_5.jpg", half3:"img61_2.jpg",
             b_txt1: "나를 깨우는 오늘의 해장<br><strong>짬뽕순두부 도시락</strong>", b_txt3:"입안을 포근하게 해주는<br><strong>몽글몽글 순두부</strong>", b_txt5:"시원한 국물의 탄생<br><strong>해산물 육수</strong>",
             b_txt2:"몽글몽글 순두부와 화끈한 불 맛 짬뽕의 환상 케미<br><br>술 마신 다음날 쓰라린 속을 위로해 줄<br>콩을 곱게 갈아 넣은 부드러운 순두부와<br>해산물 육수에 화끈한 불 맛을 더한 짬뽕의 만남.<br><br>어제 쌓인 숙취를 깨우는 오늘의 해장으로<br>짬뽕순두부 도시락을 추천합니다.",
@@ -276,11 +276,14 @@ $(document).ready(function(){
 
     var item_id = getUrlParameter('item_id');
     var item = searchItem(item_id);
-    var best = makebest(best);
+    
+    if(item.best){
+        $('.best').addClass('On_b');
+    }
+
     $("#item_img").attr("src", "img2/"+item.src);
     $(".name").html(item.name);
     $(".best").html("BEST", "best/"+item.best);
-    $(".desc").html(item.desc);
     $("#price").html(comma(item.price));
     $(".summary").html(item.summary);
     $("#item_viewOne").attr("src", "img2/"+item.viewOne);
@@ -304,24 +307,6 @@ $(document).ready(function(){
             }
         }
     }
-
-    
-    function makebest(best){
-        html = '';
-        txt = '';
-        var best = '';
-
-        for(var i in pdt){
-            best = pdt[i].best;
-
-            bestTag = '';
-
-            if(best){
-                bestTag = `<span class="best">BEST</span>`;
-            }
-        }
-    }
-
 
     function getUrlParameter(key){
         var pageUrl = window.location.search.substring(1);

@@ -200,7 +200,7 @@ img img{
     min-height: 210px;
 }
 .best{
-    display: inline-block;
+    display: none;
     padding: 0 8px;
     background: #962639;
     width: 50px;
@@ -210,6 +210,9 @@ img img{
     font-weight: bold;
     font-size: 14px;
     text-align: center;
+}
+.On_b{
+    display: inline-block;
 }
 .name{
     font-weight: 500;

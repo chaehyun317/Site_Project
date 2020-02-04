@@ -104,8 +104,6 @@ $(document).ready(function(){
             window.location = "bon_detail.html?item_id="+item_id+"&price="+price;
         });
     }
-
-    
     function comma(num){
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }

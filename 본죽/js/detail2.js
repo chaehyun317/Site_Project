@@ -380,10 +380,13 @@ $(document).ready(function(){
 
     var item_id = getUrlParameter('item_id');
     var item = searchItem(item_id);
-    var best = makebest(best);
+    
+    if(item.best){
+        $('.best').addClass('On_b');
+    }
+
     $("#item_img").attr("src", "img2/"+item.src);
     $(".name").html(item.name);
-    $(".best").html("BEST", "best/"+item.best);
     $(".desc").html(item.desc);
     $("#price").html(comma(item.price));
     $(".summary").html(item.summary);
@@ -404,23 +407,6 @@ $(document).ready(function(){
         for(var i in pdt){
             if(data == pdt[i].id){
                 return pdt[i];
-            }
-        }
-    }
-
-    
-    function makebest(best){
-        html = '';
-        txt = '';
-        var best = '';
-
-        for(var i in pdt){
-            best = pdt[i].best;
-
-            bestTag = '';
-
-            if(best){
-                bestTag = `<span class="best">BEST</span>`;
             }
         }
     }
