@@ -265,7 +265,6 @@ $(document).ready(function(){
     $(".b_txt5").html(item.b_txt5);
     $(".b_txt6").html(item.b_txt6);
 
-
     function searchItem(data){
         for(var i in pdt){
             if(data == pdt[i].id){
@@ -290,4 +289,10 @@ $(document).ready(function(){
     function comma(num){
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
+});
+
+$(document).ready(function(){
+    $(document).on('click', '.view2', function(){
+        $('#item_img').attr("src", "viewTwo.jpg");
+    })
 });
