@@ -3,6 +3,162 @@
     font-family: "Noto Sans KR";
     letter-spacing: -0.025em;
 }
+.header{
+    width: 100%;
+    height: 97px;
+    background: #6e0000;
+    position: relative;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.h_inner{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    height: 96px;
+    padding: 0 0 0 180px;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 95px;
+    background-image: url(../img/logo_gnb.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+}
+.gnb{
+    float: left;
+    height: 97px;
+    /* width: 100%; */
+    position: relative;
+}
+.bon_menu{
+    line-height: 90px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 16px;
+}
+.gnb li{
+    line-height: 90px;
+    padding: 0 15px;
+    vertical-align: middle;
+    text-align: center;
+    /* -position: relative; */
+    float: left;
+}
+.menuLink, .submenuLink{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    z-index: 1000;
+    height: 97px;
+}
+.submenuLink{
+    padding: 0 15px;
+    line-height: 50px;
+    width: 100% !important;
+}
+.submenu{
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: heigth .1s;
+    -webkit-transition: height;
+    -moz-transition: height;
+    -o-transition: height;
+    width: 100% !important;
+    left: 0;
+    z-index: 1000;
+    background: #6e0000;
+}
+.topMenuLi:hover .submenu{
+    height: 50px;
+    border-top: 1px solid rgba(225, 225, 225, 0.3);
+    z-index: 1000;
+}
+.bg{
+    /* position: absolute;
+    top: 95px; */
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    height: 52px;
+    background: #6e0000;
+    border-top: 1px solid rgba(225, 225, 225, 0.3);
+    display: none;
+    transition: heigth .1s;
+}
+.fixed2{
+    position: fixed;
+    top: 97px;
+    border-top: 1px solid rgba(225, 225, 225, 0.3);
+}
+.header:hover + .bg{
+    display: block;
+}
+.gnb2{
+    float: right;
+    height: 97px;
+    margin-top: -97px;
+    padding: 20px 0 0 0;
+}
+.innergnb2{
+    display: inline-block;
+    line-height: 52px;
+    margin-left: 150px;
+}
+.order, .login{
+    font-size: 14px;
+    color: rgba(225, 225, 225, 0.8);
+    padding: 0 10px;
+    float: left;
+    position: relative;
+}
+.login:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    margin-top: -5px;
+    background: #ddd;
+}
+.search{
+    width: 49px;
+    height: 49px;
+    margin-left: 7px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    vertical-align: top;
+    background-image: url(../img/gnb_util.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.list{
+    width: 49px;
+    height: 49px;
+    margin-left: 7px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    vertical-align: top;
+    background-image: url(../img/gnb_util.png);
+    background-repeat: no-repeat;
+    background-position: -50px top;
+}
 .wrapperinner{
     position: relative;
 }
@@ -21,7 +177,7 @@
     text-align: center;
     margin-bottom: 30px;
     position: relative;
-    padding-top: 245px;
+    padding-top: 180px;
 }
 .tabBox{
     border-bottom: 1px solid #ccc;
@@ -119,7 +275,7 @@
     font-weight: 500;
     width: 175px;
 }
-.bg{
+.b_bg{
     background: #f8f3ef;
 }
 #footer{

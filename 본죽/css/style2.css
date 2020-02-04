@@ -1,40 +1,27 @@
 *{margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
-#wrapper{
+.wrapper{
     font-family: "Noto Sans KR";
     letter-spacing: -0.025em;
 }
-#subwrap{
-    padding: 0 0 120px 0;
-    position: relative;
-}
-#gnbwrap{
-    position: relative;
+.header{
     width: 100%;
     height: 97px;
-    background: rgba(110, 0, 0, 0.9);
-    z-index: 99;
+    background: #6e0000;
+    position: relative;
 }
-#gnbwrap:before{
-    content: '';
-    display: block;
-    /* position: fixed; */
-    position: absolute;
-    left: 0;
+.fixed{
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 96px;
-    background: rgba(110, 0, 0, 0.9);
-    z-index: 21;
+    z-index: 1000;
 }
-.innerwrap{
+.h_inner{
     width: 1280px;
     margin: 0 auto;
     position: relative;
-}
-.innerwrap2{
-    position: absolute;
-    z-index: 21;
-    padding: 6px 0 0 180px;
+    height: 96px;
+    padding: 0 0 0 180px;
 }
 .logo{
     position: absolute;
@@ -50,10 +37,10 @@
 .gnb{
     float: left;
     height: 97px;
-    width: 717px;
+    /* width: 100%; */
     position: relative;
 }
-.gnb ul li{
+.bon_menu{
     line-height: 90px;
     display: inline-block;
     font-weight: 400;
@@ -66,7 +53,7 @@
     padding: 0 15px;
     vertical-align: middle;
     text-align: center;
-    -position: relative;
+    /* -position: relative; */
     float: left;
 }
 .menuLink, .submenuLink{
@@ -76,37 +63,55 @@
     font-size: 16px;
     font-weight: 400;
     color: #fff;
-}
-.longLink{
-    width: 100%;
+    z-index: 1000;
+    height: 97px;
 }
 .submenuLink{
     padding: 0 15px;
     line-height: 50px;
-    width: 100%;
+    width: 100% !important;
 }
 .submenu{
     position: absolute;
     height: 0;
     overflow: hidden;
-    transition: heigth .2s;
-    -webkit-transition: height .2s;
-    -moz-transition: height .2s;
-    -o-transition: height .2s;
+    transition: heigth .1s;
+    -webkit-transition: height;
+    -moz-transition: height;
+    -o-transition: height;
     width: 100% !important;
     left: 0;
-    background: rgba(110, 0, 0, 0.9);
-}
-.submenu li{
-    display: inline-block;
+    z-index: 1000;
+    background: #6e0000;
 }
 .topMenuLi:hover .submenu{
     height: 50px;
     border-top: 1px solid rgba(225, 225, 225, 0.3);
+    z-index: 1000;
+}
+.bg{
+    /* position: absolute;
+    top: 95px; */
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    height: 52px;
+    background: #6e0000;
+    border-top: 1px solid rgba(225, 225, 225, 0.3);
+    display: none;
+    transition: heigth .1s;
+}
+.fixed2{
+    position: fixed;
+    top: 97px;
+    border-top: 1px solid rgba(225, 225, 225, 0.3);
+}
+.header:hover + .bg{
+    display: block;
 }
 .gnb2{
     float: right;
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
 }
 .innergnb2{
     display: inline-block;
@@ -115,12 +120,12 @@
 }
 .order, .login{
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(225, 225, 225, 0.8);
     padding: 0 10px;
     float: left;
     position: relative;
 }
-.login::before{
+.login:before{
     content: "";
     position: absolute;
     left: 0;
@@ -173,7 +178,7 @@
     background-position: center center;
     background-size: cover;
 }
-.bon3{
+.bon4{
     height: 390px;
     background-image: url(../img/sub_visual4.jpg);
     background-repeat: no-repeat;
@@ -188,7 +193,7 @@
 }
 .title{
     color: #fff;
-    padding-top: 230px;
+    padding-top: 180px;
     font-size: 42px;
     font-weight: 400;
     text-align: center;
@@ -226,16 +231,6 @@
     color: #666;
     font-weight: 400;
     text-decoration: none;
-}
-.tabBrand .tabRow > a.on:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 3px;
-    background: #6e0000;
-    z-index: 1;
 }
 .container{
     display: grid;
