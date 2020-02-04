@@ -1,0 +1,79 @@
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>	
+	<style>
+		*{margin:0; padding:0; box-sizing:border-box;}
+		.order{
+			background: #6E0000;
+			color: white;
+			font-size: 20;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			width: 100%;
+		}
+		.container{
+			height: 200vh;
+			background: #f0f0f0;
+		}
+		footer{
+			background: #424242;
+			color: white;
+			font-size: 30px;
+			height: 500px;
+		}
+		.fixed{
+			position: fixed;
+			bottom: 0; left:0;
+		}
+
+		.margin{
+			margin-bottom: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container margin">
+	</div>
+	<div class="order fixed">지금바로주문하기</div>
+	<footer>
+		FOOTER
+	</footer>
+	<script>
+		$(document).ready(function(){
+			var windowHeight = window.innerHeight;
+			var on = false;
+			$(window).resize(function(){
+				windowHeight = window.innerHeight;
+			});
+
+			$(document).on('scroll', window, function(){
+				var scrollTop = $(window).scrollTop();
+				var scrollBottom = scrollTop + windowHeight;
+				console.log(scrollBottom);
+				var footerOffsetTop = $('footer').offset().top;
+
+				if(scrollBottom >= footerOffsetTop){
+					if(on){
+						return;
+					}
+					console.log('작동1');
+					on = true;
+					$('.order').removeClass('fixed');
+					$('.container').removeClass('margin');
+				}else{
+					if(!on){
+						return;
+					}
+					console.log('작동2');
+					on = false;
+					$('.order').addClass('fixed');
+					$('.container').addClass('margin');
+				}
+
+			});
+		});
+	</script>
+</body>
+</html>
