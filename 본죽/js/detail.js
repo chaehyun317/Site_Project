@@ -293,6 +293,35 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(document).on('click', '.view2', function(){
-        $('#item_img').attr("src", "viewTwo.jpg");
+        $('#item_img').attr('src', "img2/item_img.jpg");
     })
+});
+
+$(document).ready(function(){
+    var windowHeight = window.innerHeight;
+    var on = false;
+    $(window).resize(function(){
+        windowHeight = window.windowHeight;
+    });
+
+    $(document).on('scroll', window, function(){
+        var scrollTop = $(window).scrollTop();
+        var scrollBottom = scrollTop + windowHeight;
+        console.log(scrollBottom);
+        var footerOffsetTop = $('#footer').offset().top;
+
+        if(scrollBottom >= footerOffsetTop){
+            if(on){
+                return;
+            }
+            on = true;
+            $('.btn_order').removeClass('order_fixed');
+        }else{
+            if(!on){
+                return;
+            }
+            on = false;
+            $('.btn_order').addClass('order_fixed');
+        }
+    });
 });

@@ -278,6 +278,11 @@
     font-weight: 600;
     z-index: 1;
 }
+.order_fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 .best{
     background: #962639;
     width: 50px;
@@ -527,4 +532,96 @@
     font-size: 14px;
     margin-top: 9px;
 }
+#Quick{
+    width: 70px;
+    position: fixed;
+    right: 0;
+    top: 340px;
+    z-index: 15;
+}
+#Quick > nav a{
+    height: 75px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#Quick a{
+    position: relative;
+    display: block;
+    background-image: url(../img/quick.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #222;
+    text-align: center;
+}
+#Quick > nav a.quick2{
+    background-position-y: -75px;
+}
+#Quick > nav a.quick2:hover{
+    background-position-x: -70px;
+    background-color: #6e0000;
+}
+#Quick > nav a.quick3{
+    background-position-y: -150px;
+}
+#Quick > nav a.quick3:hover{
+    background-position-x: -70px;
+    background-color: #6e0000;
+}
+#Quick > nav a.quick4{
+    background-position-y: -225px;
+}
+#Quick > nav a.quick4:hover{
+    background-position-x: -70px;
+    background-color: #6e0000;
+}
+#Quick > nav a.quick5{
+    background-position-y: -300px;
+}
+#Quick > nav a.quick5:hover{
+    background-position-x: -70px;
+    background-color: #6e0000;
+}
+#Quick > nav a.quick6{
+    background-position-y: -375px;
+}
+#Quick > nav a.quick6:hover{
+    background-position-x: -70px;
+    background-color: #6e0000;
+}
+#Quick > nav a.quick7{
+    background-position-y: -450px;
+}
+#Quick > nav a.quick7:hover{
+    background-position-x: -70px;
+    background-color: #6e0000;
+}
+#Quick > nav a.quick8{
+    background-position-y: -525px;
+}
+#Quick > nav a.quick8:hover{
+    background-position-x: -70px;
+    background-color: #6e0000;
+}
+#Quick > nav a span{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+.top{
+    position: relative;
+    display: block;
+    text-align: center;
+    height: 30px;
+    text-decoration: none;
+    color: #999;
+    line-height: 30px;
+    background: #222;
+    background-image: url(../img/quick.png);
+    background-repeat: no-repeat;
+    background-position-y: -600px;
+}
+
 

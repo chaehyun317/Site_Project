@@ -428,3 +428,32 @@ $(document).ready(function(){
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 });
+
+$(document).ready(function(){
+    var windowHeight = window.innerHeight;
+    var on = false;
+    $(window).resize(function(){
+        windowHeight = window.windowHeight;
+    });
+
+    $(document).on('scroll', window, function(){
+        var scrollTop = $(window).scrollTop();
+        var scrollBottom = scrollTop + windowHeight;
+        console.log(scrollBottom);
+        var footerOffsetTop = $('#footer').offset().top;
+
+        if(scrollBottom >= footerOffsetTop){
+            if(on){
+                return;
+            }
+            on = true;
+            $('.btn_order').removeClass('order_fixed');
+        }else{
+            if(!on){
+                return;
+            }
+            on = false;
+            $('.btn_order').addClass('order_fixed');
+        }
+    });
+});

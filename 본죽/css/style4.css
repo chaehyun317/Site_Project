@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
-#wrapper{
+.wrapper{
     font-family: "Noto Sans KR";
     letter-spacing: -0.025em;
 }
@@ -112,7 +112,6 @@
 .gnb2{
     float: right;
     height: 97px;
-    margin-top: -97px;
     padding: 20px 0 0 0;
 }
 .innergnb2{

@@ -15,11 +15,11 @@ var swiper = new Swiper('.first', {
 });
 
 var swiper = new Swiper('.second', {        
-    // slidesPerGroup: 1,
+    slidesPerGroup: 1,
     slidesPerView: 1,
     spaceBetween: 80,
     loop: true,
-    // loopFillGroupWithBlank: true,
+    loopFillGroupWithBlank: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
