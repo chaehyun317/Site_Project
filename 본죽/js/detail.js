@@ -292,9 +292,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $(document).on('click', '.view2', function(){
-        $('#item_img').attr('src', "img2/item_img.jpg");
+    $(document).on('click', '.view1', function(){
+        var src = $(this).children('img').attr('src');
+        console.log(src);
+        $('#item_img').attr('src', src);
     })
+    
 });
 
 $(document).ready(function(){

@@ -353,3 +353,11 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $(document).on('click', '.view1', function(){
+        var src = $(this).children('img').attr('src');
+        console.log(src);
+        $('#item_img').attr('src', src);
+    })
+});
