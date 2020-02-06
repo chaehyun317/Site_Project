@@ -177,7 +177,7 @@
 .swiper-pagination{
     bottom: 55px !important;
 }
-.swiper-pagination-bullet{
+.topBanner .swiper-pagination-bullet{
     background: #fff;
     width: 44px;
     height: 3px;

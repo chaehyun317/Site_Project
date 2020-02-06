@@ -276,7 +276,7 @@ img img{
     left: 0;
     bottom: 0;
 }
-.view1, .view2{
+.view1{
     display: block;
     margin-right: 10px;
     float: left;
