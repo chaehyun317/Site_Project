@@ -181,6 +181,7 @@ body{
 }
 #item_img{
     height: 552px;
+    width: 552px;
 }
 img img{
     width: 100%;
@@ -284,6 +285,7 @@ img img{
 }
 #item_viewOne, #item_viewTwo{
     height: 65px;
+    width: 65px;
 }
 .view1 img, .view2 img{
     width: 100%;
