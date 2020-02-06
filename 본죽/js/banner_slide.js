@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.topBanner', {
     slidesPerView: 1,
     loop: true,
     autoplay: {
