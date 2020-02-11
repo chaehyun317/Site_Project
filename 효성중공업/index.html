@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="routes/index.js"></script>
+    <script src="routes/outline.js"></script>
+    <script src="routes/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="t_header">
+            <div onclick="route('Main')" class="logo" >
+                <img src="../효성중공업/img/logo.png">
+            </div>
+            <div class="util">
+                <ul class="u_inner">
+                    <li class="contact">
+                        <div class="btn_u contact">
+                            <span>고객문의</span>
+                        </div>
+                    </li>
+                    <li class="language">
+                        <div class="btn_u language">
+                            <span>Language</span>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="btn_u product">
+                            <span>PRODUCT</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+        <div class="b_header">
+            <ul class="nav">
+                <li class="menu1">
+                    <div class="label">효성중공업 소개</div>
+                    <ul class="hyo_menu">
+                        <li onclick="route('Outline')" class="hyosung">개요</li>
+                        <li><a href="" class="hyosung">연혁</a></li>
+                        <li><a href="" class="hyosung">인사말</a></li>
+                        <li><a href="" class="hyosung">Hyosung Way</a></li>
+                        <li><a href="" class="hyosung">지속가능경영</a></li>
+                        <li><a href="" class="hyosung">글로벌 네트워크</a></li>
+                        <li><a href="" class="hyosung">R&D</a></li>
+                    </ul>
+                </li>
+                <li class="menu1">
+                    <a href="" class="label">사업분야</a>
+                    <ul class="hyo_menu">
+                        <li><a href="" class="hyosung">송배전설비</a></li>
+                        <li><a href="" class="hyosung">시스템&엔지니어링 솔루션</a></li>
+                        <li><a href="" class="hyosung">신재생에너지</a></li>
+                        <li><a href="" class="hyosung">전동기&발전기</a></li>
+                        <li><a href="" class="hyosung">산업기계</a></li>
+                        <li><a href="" class="hyosung">기어솔루션</a></li>
+                        <li><a href="" class="hyosung">용접솔루션</a></li>
+                        <li><a href="" class="hyosung">건설(효성해링턴 플레이스)</a></li>
+                    </ul>
+                </li>
+                <li class="menu1">
+                    <a href="" class="label">홍보센터</a>
+                    <ul class="hyo_menu">
+                        <li><a href="" class="hyosung">뉴스센터</a></li>
+                        <li><a href="" class="hyosung">홍보자료</a></li>
+                    </ul>
+                </li>
+                <li class="menu1">
+                    <a href="" class="label">투자정보</a>
+                    <ul class="hyo_menu Last">
+                        <li><a href="" class="hyosung">기업지배구조</a></li>
+                        <li><a href="" class="hyosung">재무정보</a></li>
+                        <li><a href="" class="hyosung">IR 정보</a></li>
+                        <li><a href="" class="hyosung">공시자료</a></li>
+                        <li><a href="" class="hyosung">연차보고서</a></li>
+                        <li><a href="" class="hyosung">공고 / 실적발표자료</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="bg"></div>
+        </div>
+    </header>
+    <div id="container"></div>
+    <script>
+        route("Main");
+    </script>
+</body>
+</html>
