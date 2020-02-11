@@ -321,3 +321,9 @@ sec2{
 .slide1{background-image: url(../img/banner1.jpg);}
 .slide2{background-image: url(../img/banner2.jpg);}
 .slide3{background-image: url(../img/banner3.jpg);} */
+#container{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
