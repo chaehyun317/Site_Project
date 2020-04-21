@@ -1,0 +1,207 @@
+*{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
+.fer_wrap{
+    margin: 0 40px;
+    margin-bottom: 40px;
+}
+.fer_wrap_inner{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.fer_content{
+    padding-bottom: 100px;
+    background-image: url(../img/cooking_bg.jpg);
+}
+.fer_sec1_banner{
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/fer_sec1_1.jpg);
+}
+.fer_sec2{
+    display: block;
+    padding: 70px 0 20px;
+}
+.fer_sec2_wrap{
+    max-width: 900px;
+    padding: 0 30px;
+    height: 181px;
+    position: relative;
+    margin: 0 auto;
+}
+.fer_sec2_txt{
+    margin-left: 165px;
+    padding-left: 80px;
+}
+.fer_sec2_txt h2{
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: -1.35px;
+    line-height: 32px;
+    font-family: 'Noto Serif KR', serif;
+}
+.fer_sec2_txt2{
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+}
+.fer_sec3{
+    display: block;
+    height: 1900px;
+}
+.fer_sec3_wrap{
+    padding-top: 180px;
+    padding-bottom: 20px;
+    height: 1646px;
+}
+.fer_sec3_inner{
+    max-width: 900px;
+    padding: 0 30px;
+    position: relative;
+    margin: 0 auto;
+    height: 1646px;
+}
+.fer_sec3_box{
+    height: 1480px;
+    display: block;
+}
+.fer_sec3_txt2{
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+}
+.fer_sec3_list{
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #fafafa;
+}
+.fer_sec3_item{
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #cbcbcb;
+    height: 135px;
+}
+.fer_item{
+    cursor: pointer;
+    padding: 20px 0;
+    text-align: left;
+}
+.fer_item_num{
+    margin-top: 13px;
+    width: 108px;
+    float: left;
+    font-size: 19px;
+    height: 23px;
+    font-family: 'Noto Serif KR', serif;
+    color: #b39a78;
+    line-height: 23px;
+}
+.fer_num_date{
+    display: inline-block;
+    margin-top: 0;
+    font-size: 16px;
+    color: #333;
+    vertical-align: top;
+    line-height: 23px;
+}
+.fer_item_title{
+    margin-bottom: 5px;
+    position: relative;
+    color: #444;
+    font-size: 15px;
+    height: 90px;
+    width: 264px;
+    float: left;
+    line-height: 23px;
+    margin-top: 10px;
+}
+.fer_title_inner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.fer_sec3_txt3{
+    display: inline-block;
+    min-width: 100%;
+    margin-top: 2px;
+    vertical-align: middle;
+}
+.fer_sec3_inner2{
+    margin-top: 5px;
+    color: #666;
+    line-height: 20px;
+}
+.fer_sec3_txt4{
+    margin-top: 0;
+    position: relative;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+.fer_sec3_txt4:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 1px;
+    background-color: #666;
+}
+.fer_sec3_img{
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    margin-top: 10px;
+}
+.fer1{background-image: url(../img/fer_sec3_1.png);}
+.fer2{background-image: url(../img/fer_sec3_2.png);}
+.fer3{background-image: url(../img/fer_sec3_3.png);}
+.fer4{background-image: url(../img/fer_sec3_4.png);}
+.fer5{background-image: url(../img/fer_sec3_5.png);}
+.fer6{background-image: url(../img/fer_sec3_6.png);}
+.fer7{background-image: url(../img/fer_sec3_7.png);}
+.fer8{background-image: url(../img/fer_sec3_8.png);}
+.fer_sec3_name{
+    display: inline-block;
+    font-size: 14px;
+    width: 120px;
+    height: 41px;
+    margin-left: 13px;
+    color: #666;
+}
+.fer_sec3_name p{
+    display: inline-block;
+    width: 118px;
+}
+.fer_sec3_name span{
+    display: inline-block;
+    width: 118px;
+    color: #999;
+}
+.fer_sec4{
+    height: 920px;
+}
+.fer_sec4_wrap{
+    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    height: 920px;
+}
+.fer_sec4_inner{
+    max-width: 900px;
+    padding: 0 30px;
+    position: relative;
+    margin: 0 auto;
+}
+.fer_sec4_box2{
+    background-color: #fff;
+    border: 4px solid #e0e0e0;
+    height: 911px;
+    width: 647px;
+}

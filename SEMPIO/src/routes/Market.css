@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0; box-sizing: border-box; list-style: none; text-decoration: none;}
+.ma_wrap{
+    padding-bottom: 100px;
+    background-color: #f2f2f2;
+    margin: 0 40px;
+}
+.ma_sec1{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.ma_banner{
+    height: 400px;
+    background-image: url(../img/ma_banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
