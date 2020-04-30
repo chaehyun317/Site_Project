@@ -11,7 +11,7 @@
     position: relative;
     width: 100%;
     height: 770px;
-    background-image: url(../img/j_banner.jpg);
+    background-image: url(../../img/j_banner.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -35,7 +35,7 @@
     float: right;
     width: 86px;
     height: 75px;
-    background-image: url(../img/mark_sempio.png);
+    background-image: url(../../img/mark_sempio.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -146,7 +146,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/j_sec2_1.jpg);
+    background-image: url(../../img/j_sec2_1.jpg);
 }
 .j_story_txt{
     background-color: #fff;
@@ -198,7 +198,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/j_sec2_2.jpg);
+    background-image: url(../../img/j_sec2_2.jpg);
 }
 .j_story_box3{
     float: left;
@@ -211,7 +211,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/j_sec2_3.jpg);
+    background-image: url(../../img/j_sec2_3.jpg);
 }
 .j_sec2_2{
     position: relative;
@@ -239,7 +239,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/j_sec2_4.jpg);
+    background-image: url(../../img/j_sec2_4.jpg);
 }
 .j_story_img5{
     max-width: 100%;
@@ -247,7 +247,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/j_sec2_5.jpg);
+    background-image: url(../../img/j_sec2_5.jpg);
 }
 .j_sec4{
     max-width: 1920px;
@@ -255,7 +255,7 @@
     margin-bottom: 40px;
     position: relative;
     height: 550px;
-    background-image: url(../img/j_sec4_1.jpg);
+    background-image: url(../../img/j_sec4_1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

@@ -10,7 +10,8 @@ const Recipe = () => {
                     <div className="re_sec_wrap">
                         <div className="re_sec_inner">
                             <div className="re_list_wrap">
-                                <ul className="re_sec_list">
+                                
+                                {/* <ul className="re_sec_list">
                                     <li className="re_item">
                                         <div className="re_item_inner">
                                             <div className="re_item_img"></div>
@@ -119,13 +120,10 @@ const Recipe = () => {
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="re_page">
-        
                 </div>
             </div>
         </div>

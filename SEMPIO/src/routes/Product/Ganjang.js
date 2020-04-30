@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Ganjang.css';
-import Slideshow11 from './Slider11';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
+
 
 const Ganjang = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'ganjang');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="g_wrap">
             <div className="g_content">
@@ -122,7 +131,7 @@ const Ganjang = () => {
                 </div>
                 <div className="g_sec4">
                     <div className="g_sec4_wrap">
-                        <Slideshow11></Slideshow11>
+                        <CustomSlider label={'canSlider'} imgs={slide}  />
                     </div>
                 </div> 
             </div>

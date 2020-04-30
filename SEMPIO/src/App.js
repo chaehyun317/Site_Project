@@ -11,7 +11,6 @@ import { Campaign, Cooking, Doenjang, Fermentation, Heritage, Junior, Week } fro
 
 
 
-
 const App = () => {
     return (
         <BrowserRouter>
@@ -22,7 +21,7 @@ const App = () => {
                     <Route path="/cooking" component={Cooking}/>
                     <Route path="/week" component={Week}/>
                     <Route path="/doenjang" component={Doenjang}/>
-                    <Route path="/yondo" component={Yondu}/>
+                    <Route path="/yondu" component={Yondu}/>
                     <Route path="/fontana" component={Fontana}/>
                     <Route path="/ricevinega" component={Ricevinega}/>
                     <Route path="/ziller" component={Ziller}/>

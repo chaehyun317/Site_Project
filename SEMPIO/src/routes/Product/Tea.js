@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Tea.css';
-import Slideshow5 from './Slider5';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
 
 const Tea = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'tea');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="t_wrap">
             <div className="t_content">
@@ -82,7 +90,7 @@ const Tea = () => {
                     </div>
                     <div className="t_sec4">
                         <div className="t_sec4_wrap">
-                            <Slideshow5></Slideshow5>
+                            <CustomSlider label={'canSlider'} imgs={slide}  />
                         </div>
                     </div>
                 </div> 

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Yondu.css';
-import Slideshow from './Slider';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
 
 const Yondu = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'yondu');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="y_wrap">
             <div className="y_content">
@@ -134,7 +142,7 @@ const Yondu = () => {
                     </div>
                     <div className="y_sec4">
                         <div className="y_sec4_wrap">
-                            <Slideshow></Slideshow>
+                            <CustomSlider label={'canSlider'} imgs={slide}  />
                         </div>
                     </div>
                 </div>

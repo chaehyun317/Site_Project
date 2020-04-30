@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Can.css';
-import Slideshow8 from './Slider8';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
 
 const Can = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'can');
+        setSlide(list);
+    }, []);
+
     return(
         <div className="can_wrap">
             <div className="can_content">
@@ -97,7 +105,7 @@ const Can = () => {
                 </div>
                 <div className="can_sec4">
                     <div className="can_sec4_wrap">
-                        <Slideshow8></Slideshow8>
+                        <CustomSlider label={'canSlider'} imgs={slide}  />
                     </div>
                 </div>  
             </div>
@@ -106,3 +114,4 @@ const Can = () => {
 };
 
 export default Can;
+

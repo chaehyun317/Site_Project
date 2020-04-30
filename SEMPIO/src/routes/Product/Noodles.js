@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Noodles.css';
-import Slideshow7 from './Slider7';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
+
 
 const Noodles = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'Noodles');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="n_wrap">
             <div className="n_content">
@@ -100,7 +109,7 @@ const Noodles = () => {
                 </div> 
                 <div className="n_sec4">
                     <div className="n_sec4_wrap">
-                        <Slideshow7></Slideshow7>
+                        <CustomSlider label={'canSlider'} imgs={slide}  />
                     </div>
                 </div>
             </div>

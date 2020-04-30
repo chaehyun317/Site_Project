@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Sauce.css';
-import Slideshow9 from './Slider9';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
 
 const Sauce = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'sauce');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="s_wrap">
             <div className="s_content">
@@ -119,7 +127,7 @@ const Sauce = () => {
                 </div>
                 <div className="s_sec4">
                     <div className="s_sec4_wrap">
-                        <Slideshow9></Slideshow9>
+                        <CustomSlider label={'canSlider'} imgs={slide}  />
                     </div>
                 </div>  
             </div>

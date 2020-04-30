@@ -9,13 +9,13 @@
 }
 .c_content{
     padding-bottom: 100px;
-    background-image: url(../img/cooking_bg.jpg);
+    background-image: url(../../img/cooking_bg.jpg);
 }
 .c_sec1_banner{
     width: 100%;
     height: 500px;
     position: relative;
-    background-image: url(../img/c_sec1_1.jpg);
+    background-image: url(../../img/c_sec1_1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -86,9 +86,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.re1{background-image: url(../img/sec2_1.png);}
-.re2{background-image: url(../img/sec2_2.png);}
-.re3{background-image: url(../img/sec2_3.png);}
+.re1{background-image: url(../../img/sec2_1.png);}
+.re2{background-image: url(../../img/sec2_2.png);}
+.re3{background-image: url(../../img/sec2_3.png);}
 .result_txt{
     margin-top: 10px;
     font-size: 15px;
@@ -178,8 +178,8 @@
     margin-top: 13px;
     color: #827e79;
 }
-.pr1{background-image: url(../img/pr1.jpg);}
-.pr2{background-image: url(../img/pr2.jpg);}
-.pr3{background-image: url(../img/pr3.jpg);}
-.pr4{background-image: url(../img/pr4.jpg);}
-.pr5{background-image: url(../img/pr5.jpg);}
+.pr1{background-image: url(../../img/pr1.jpg);}
+.pr2{background-image: url(../../img/pr2.jpg);}
+.pr3{background-image: url(../../img/pr3.jpg);}
+.pr4{background-image: url(../../img/pr4.jpg);}
+.pr5{background-image: url(../../img/pr5.jpg);}

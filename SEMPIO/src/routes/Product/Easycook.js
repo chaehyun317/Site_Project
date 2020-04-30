@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Easycook.css';
-import Slideshow10 from './Slider10';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
+
 
 const Easycook = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'easycook');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="e_wrap">
             <div className="e_content">
@@ -95,7 +104,7 @@ const Easycook = () => {
                 </div>
                 <div className="e_sec4">
                     <div className="e_sec4_wrap">
-                        <Slideshow10></Slideshow10>
+                        <CustomSlider label={'canSlider'} imgs={slide}  />
                     </div>
                 </div>  
             </div>

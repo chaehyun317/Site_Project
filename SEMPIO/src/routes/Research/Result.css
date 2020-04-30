@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box; list-style: none; text-decoration: none;}
 .res_wrap{
     margin: 0 40px;
-    background-image: url(../img/cooking_bg.jpg);
+    background-image: url(../../img/cooking_bg.jpg);
     margin-bottom: 40px;
 }
 .res_content{
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url(../img/res_banner.jpg);
+    background-image: url(../../img/res_banner.jpg);
 }
 .res_sec{
     max-width: 800px;

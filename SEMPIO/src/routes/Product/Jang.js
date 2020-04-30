@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Jang.css';
-import Slideshow6 from './Slider6';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
+
 
 const Jang = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'jang');
+        setSlide(list);
+    }, []);
+    
     return (
         <div className="j_wrap">
             <div className="j_content">
@@ -137,7 +146,7 @@ const Jang = () => {
                 </div>
                 <div className="j_sec4">
                     <div className="j_sec4_wrap">
-                        <Slideshow6></Slideshow6>
+                        <CustomSlider label={'canSlider'} imgs={slide}  />
                     </div>
                 </div>
             </div>

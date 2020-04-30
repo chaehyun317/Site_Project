@@ -9,12 +9,12 @@
 }
 .cam_content{
     padding-bottom: 100px;
-    background-image: url(../img/cooking_bg.jpg);
+    background-image: url(../../img/cooking_bg.jpg);
 }
 .cam_sec1_banner{
     width: 100%;
     height: 500px;
-    background-image: url(../img/cam_sec1_1.jpg);
+    background-image: url(../../img/cam_sec1_1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -108,7 +108,7 @@
     left: 125px;
     width: 560px;
     height: 378px;
-    background-image: url(../img/cam_sec3_1.jpg);
+    background-image: url(../../img/cam_sec3_1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

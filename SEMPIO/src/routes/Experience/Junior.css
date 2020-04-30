@@ -9,7 +9,7 @@
 }
 .ju_content{
     padding-bottom: 60px;
-    background-image: url(../img/cooking_bg.jpg);
+    background-image: url(../../img/cooking_bg.jpg);
 }
 .ju_sec1_banner{
     width: 100%;
@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url(../img/ju_sec1_1.jpg);
+    background-image: url(../../img/ju_sec1_1.jpg);
 }
 .ju_sec2{
     padding: 70px 0 20px;
@@ -93,9 +93,9 @@
     background-position: center center;
     background-size: cover;
 }
-.ju1{background-image: url(../img/ju_sec3_1.png);}
-.ju2{background-image: url(../img/ju_sec3_2.png);}
-.ju3{background-image: url(../img/ju_sec3_3.png);}
+.ju1{background-image: url(../../img/ju_sec3_1.png);}
+.ju2{background-image: url(../../img/ju_sec3_2.png);}
+.ju3{background-image: url(../../img/ju_sec3_3.png);}
 .ju_sec3_desc{
     padding: 20px 40px 0 20px;
     float: left;

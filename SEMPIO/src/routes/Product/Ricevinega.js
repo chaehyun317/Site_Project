@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Ricevinega.css';
-import Slideshow3 from './Slider3';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
+
 
 const Ricevinega = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'ricevinega');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="r_wrap">
             <div className="r_content">
@@ -97,7 +106,7 @@ const Ricevinega = () => {
                     </div>
                     <div className="r_sec4">
                         <div className="r_sec4_wrap">
-                            <Slideshow3></Slideshow3>
+                            <CustomSlider label={'canSlider'} imgs={slide}  />
                         </div>
                     </div>
                 </div>

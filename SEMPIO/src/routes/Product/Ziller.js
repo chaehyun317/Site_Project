@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Ziller.css';
-import Slideshow4 from './Slider4';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
 
 const Ziller = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'ziller');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="z_wrap">
             <div className="z_content">
@@ -84,7 +92,7 @@ const Ziller = () => {
                     </div>
                     <div className="z_sec4">
                         <div className="z_sec4_wrap">
-                            <Slideshow4></Slideshow4>
+                            <CustomSlider label={'canSlider'} imgs={slide}  />
                         </div>
                     </div>
                 </div>

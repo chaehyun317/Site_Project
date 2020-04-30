@@ -9,7 +9,7 @@
 }
 .fer_content{
     padding-bottom: 100px;
-    background-image: url(../img/cooking_bg.jpg);
+    background-image: url(../../img/cooking_bg.jpg);
 }
 .fer_sec1_banner{
     width: 100%;
@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url(../img/fer_sec1_1.jpg);
+    background-image: url(../../img/fer_sec1_1.jpg);
 }
 .fer_sec2{
     display: block;
@@ -160,14 +160,14 @@
     background-size: cover; 
     margin-top: 10px;
 }
-.fer1{background-image: url(../img/fer_sec3_1.png);}
-.fer2{background-image: url(../img/fer_sec3_2.png);}
-.fer3{background-image: url(../img/fer_sec3_3.png);}
-.fer4{background-image: url(../img/fer_sec3_4.png);}
-.fer5{background-image: url(../img/fer_sec3_5.png);}
-.fer6{background-image: url(../img/fer_sec3_6.png);}
-.fer7{background-image: url(../img/fer_sec3_7.png);}
-.fer8{background-image: url(../img/fer_sec3_8.png);}
+.fer1{background-image: url(../../img/fer_sec3_1.png);}
+.fer2{background-image: url(../../img/fer_sec3_2.png);}
+.fer3{background-image: url(../../img/fer_sec3_3.png);}
+.fer4{background-image: url(../../img/fer_sec3_4.png);}
+.fer5{background-image: url(../../img/fer_sec3_5.png);}
+.fer6{background-image: url(../../img/fer_sec3_6.png);}
+.fer7{background-image: url(../../img/fer_sec3_7.png);}
+.fer8{background-image: url(../../img/fer_sec3_8.png);}
 .fer_sec3_name{
     display: inline-block;
     font-size: 14px;

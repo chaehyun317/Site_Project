@@ -9,7 +9,7 @@
 }
 .he_content{
     padding-bottom: 60px;
-    background-image: url(../img/cooking_bg.jpg);
+    background-image: url(../../img/cooking_bg.jpg);
 }
 .he_sec1_banner{
     width: 100%;
@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url(../img/h_sec1_1.jpg);
+    background-image: url(../../img/h_sec1_1.jpg);
 }
 .he_sec2{
     padding: 70px 0 20px;

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Fontana.css';
-import Slideshow2 from './Slider2';
+import { CustomSlider } from '../../component';
+import SLIDE_IMAGE from '../../jsons/slideImg.json';
 
 const Fontana = () => {
+    const [slide, setSlide] = useState([]);
+
+    useEffect(() => {
+        const list = SLIDE_IMAGE.filter(item => item.type === 'fontana');
+        setSlide(list);
+    }, []);
+
     return (
         <div className="f_wrap">
             <div className="f_content">
@@ -103,7 +111,7 @@ const Fontana = () => {
                     </div>
                     <div className="f_sec4">
                         <div className="f_sec4_wrap">
-                            <Slideshow2></Slideshow2>
+                            <CustomSlider label={'canSlider'} imgs={slide}  />
                         </div>
                     </div>
                 </div> 
