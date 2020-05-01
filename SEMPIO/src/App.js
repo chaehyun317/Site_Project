@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Switch, Route, NavLink, Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import Main from './routes/Main';
 import Market from './routes/Market';
@@ -7,7 +7,7 @@ import { Footer, Header } from './component';
 import { Intro, Process, Result, Recipe } from './routes/Research';
 import { Can, Easycook, Fontana, Ganjang, Jang, Noodles, Ricevinega, Sauce, Tea, Yondu, Ziller } from './routes/Product';
 import { Campaign, Cooking, Doenjang, Fermentation, Heritage, Junior, Week } from './routes/Experience';
-
+import Pagination from './routes/Pagination';
 
 
 
@@ -36,8 +36,8 @@ const App = () => {
                     <Route path="/fermentation" component={Fermentation}/>
                     <Route path="/junior" component={Junior}/>
                     <Route path="/heritage" component={Heritage}/>
-                    <Route path="/Recipe" component={Recipe}/>
-                    <Route path="/market" component={Market}/>
+                    <Route path="/recipe" component={Recipe}/>
+                    <Route path="/market/:page" component={Market}/>
                     <Route path="/process" component={Process}/>
                     <Route path="/result" component={Result}/>
                 </Switch>

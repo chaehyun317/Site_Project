@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Pagination.css';
 
+
 const VIEW = 12;
 const ITEMS =[
     {"id": 1, "name": "[한정판]맛있는 추억간장(샘표 양조간장 501)", "price": 7220, "type": 42}

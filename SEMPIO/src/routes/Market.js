@@ -1,7 +1,9 @@
 import React from 'react';
 import './Market.css';
+import CustomPagination from '../component/CustomPagination';
 import Pagination from '../routes/Pagination';
-import { Route } from 'react-router-dom';
+
+
 
 const Market = () => {
     return (
@@ -10,9 +12,9 @@ const Market = () => {
                 <div className="ma_banner"></div>
                 <div className="ma_sec">
                     <div className="ma_product">
-                        <Pagination/>
-                        {/* <div className="ma_list_wrap">
-                            <ul className="ma_list">
+                        <div className="ma_list_wrap">
+                              
+                            {/* <ul className="ma_list">
                                 <li className="ma_item">
                                     <div className="item_spacer"></div>
                                     <div className="item_cart">장바구니 담기</div>
@@ -23,8 +25,8 @@ const Market = () => {
                                 <li className="ma_item">
                                     <div className="item_spacer"></div>
                                 </li>
-                            </ul>
-                        </div> */}
+                            </ul> */}
+                        </div>
                         <div className="finder">
                             <div className="finder_spacer"></div>
                         </div>
