@@ -7,7 +7,10 @@ import { Footer, Header } from './component';
 import { Intro, Process, Result, Recipe } from './routes/Research';
 import { Can, Easycook, Fontana, Ganjang, Jang, Noodles, Ricevinega, Sauce, Tea, Yondu, Ziller } from './routes/Product';
 import { Campaign, Cooking, Doenjang, Fermentation, Heritage, Junior, Week } from './routes/Experience';
-import Pagination from './routes/Pagination';
+
+
+
+
 
 
 

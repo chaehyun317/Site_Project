@@ -5,6 +5,7 @@ import Pagination from '../routes/Pagination';
 
 
 
+
 const Market = () => {
     return (
         <div className="ma_wrap">
@@ -13,7 +14,7 @@ const Market = () => {
                 <div className="ma_sec">
                     <div className="ma_product">
                         <div className="ma_list_wrap">
-                              
+                            <CustomPagination/> 
                             {/* <ul className="ma_list">
                                 <li className="ma_item">
                                     <div className="item_spacer"></div>
