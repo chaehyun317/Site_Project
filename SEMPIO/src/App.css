@@ -323,6 +323,8 @@ footer{
     margin-left: 290px;
     display: block;
     margin-top: 15px;
+    width: 750px;
+    height: 150px;
 }
 .fb_txt3{
     font-size: 13px;
@@ -342,7 +344,7 @@ footer{
 }
 .contact2_bottom{
     display: block;
-    margin-top: 15px;
+    margin-top: 85px;
 }
 .contact2_bottom:after{
     content: '';

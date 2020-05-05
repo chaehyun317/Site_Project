@@ -1,5 +1,4 @@
 .pagination{
-    display: flex;
     justify-content: center;
 }
 ul, li{
@@ -8,21 +7,6 @@ ul, li{
 }
 li{
     list-style: none;
-}
-.pageContainer{
-    width: 720px;
-    height: 1600px;
     float: left;
-    background-color: lightpink;
 }
-.pageList{
-    width: 720px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-.pageItem{
-    width: 220px;
-    height: 325px;
-    display: flex;
-}
+

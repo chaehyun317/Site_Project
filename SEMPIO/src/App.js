@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Main from './routes/Main';
 import Market from './routes/Market';
@@ -7,10 +7,6 @@ import { Footer, Header } from './component';
 import { Intro, Process, Result, Recipe } from './routes/Research';
 import { Can, Easycook, Fontana, Ganjang, Jang, Noodles, Ricevinega, Sauce, Tea, Yondu, Ziller } from './routes/Product';
 import { Campaign, Cooking, Doenjang, Fermentation, Heritage, Junior, Week } from './routes/Experience';
-
-
-
-
 
 
 

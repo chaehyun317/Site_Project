@@ -25,7 +25,7 @@ const Header = () => {
                                             <Link to="/process">프로세스</Link>
                                         </li>
                                         <li className="menuLink">
-                                        <Link to="/result">연구결과</Link>
+                                            <Link to="/result">연구결과</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link to="/recipe">레시피</Link>
@@ -114,7 +114,7 @@ const Header = () => {
                                 </li>
                                 <li className="topMenu">
                                     <div className="label">
-                                        <Link to="/market">
+                                        <Link to="/market/1">
                                             마켓
                                         </Link>
                                     </div>
