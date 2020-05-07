@@ -1,4 +1,4 @@
-const imageURI = {
+const ImageURI = {
     item1: require ('../img/item1.png').default,
     item2: require ('../img/item2.png').default,
     item3: require ('../img/item3.png').default,
@@ -214,4 +214,4 @@ const imageURI = {
     item213: require ('../img/item213.png').default,
 }
 
-export default imageURI;
+export default ImageURI;

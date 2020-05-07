@@ -58,3 +58,11 @@
     font-size: 18px;
     margin-bottom: 15px;
 }
+.pagination{
+    margin-left: 25%;
+    margin-top: 40px;
+}
+.pagination li{
+    float: left;
+    margin-left: 5px;
+}

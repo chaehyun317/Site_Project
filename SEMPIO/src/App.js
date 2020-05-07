@@ -35,7 +35,7 @@ const App = () => {
                     <Route path="/fermentation" component={Fermentation}/>
                     <Route path="/junior" component={Junior}/>
                     <Route path="/heritage" component={Heritage}/>
-                    <Route path="/recipe" component={Recipe}/>
+                    <Route path="/recipe/:page" component={Recipe}/>
                     <Route path="/market/:page" component={Market}/>
                     <Route path="/process" component={Process}/>
                     <Route path="/result" component={Result}/>

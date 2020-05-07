@@ -12,10 +12,6 @@ const Market = ({ match, history }) => {
 
     const [view, setView] = useState([]);
 
-    const onPage = value => {
-        history.push(`/market/${value}`);
-    };
-
     useEffect(() => {
         const malist = ITEMS.filter(item => item.id === 'market');
         setView(malist);
@@ -40,8 +36,8 @@ const Market = ({ match, history }) => {
                                 {view.map((item) =>(
                                     <Item item={item}/>
                                 ))}
-                                <CustomPagination page={page} total={ITEMS.length} view={VIEW}/>
                             </div>
+                            <CustomPagination path={'market'} page={page} total={ITEMS.length} view={VIEW}/>
                         </div>
                         <div className="finder">
                             <div className="finder_spacer">

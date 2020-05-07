@@ -8,10 +8,6 @@ const ITEMS = [];
 const Pagination = ({ history, match: { params: { page } } }) => {
 	const [viewItem, setViewItem] = useState([]);
 
-	const onPage = val => {
-		history.push(`/market/${val}`);
-	};
-
 	useEffect(() => {
 		const start = (page - 1) * VIEW; 
 		const end = start + VIEW > ITEMS.length ? ITEMS.length - 1 : start + VIEW;
@@ -28,7 +24,7 @@ const Pagination = ({ history, match: { params: { page } } }) => {
 					</div>
 				))}
 			</div>
-			<CustomPagination onPage={onPage} total={ITEMS.length} view={12} page={page} />
+			<CustomPagination total={ITEMS.length} view={12} page={page} />
 		</div>
 	);
 };

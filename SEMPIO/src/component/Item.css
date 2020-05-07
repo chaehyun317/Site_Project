@@ -48,3 +48,38 @@
     background-color: #b61c21;
     color: #fff;
 }
+
+.re_item{
+    width: 253px;
+    height: 331px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.re_inner{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.re_img img{
+    width: 233px;
+    height: 311px;
+}
+.re_desc_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 35px 20px 0;
+}
+.re_desc{
+    font-size: 14px;
+    color: #b39a78;
+    margin-bottom: 14px;
+}
+.re_name{
+    color: #333;
+    font-size: 20px;
+}
