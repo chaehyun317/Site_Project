@@ -8,8 +8,7 @@ const Main = () => {
         <div className="m_wrap">
             <div className="m_banner">
                 <div className="foreground">
-                    {/* <iframe id="myVideo" src="https://www.youtube.com/embed/NP2l-BDg--U controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;showinfo=0&amp;playlist=0" 
-                    frameborder="0"  allowfullscreen=""></iframe> */}
+                    {/* <iframe id="myVideo" src="https://www.youtube.com/embed/NP2l-BDg--U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </div>
             </div>
             <div className="m_manu">

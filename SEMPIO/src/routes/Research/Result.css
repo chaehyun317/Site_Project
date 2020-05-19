@@ -3,6 +3,7 @@
     margin: 0 40px;
     background-image: url(../../img/cooking_bg.jpg);
     margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 .res_content{
     max-width: 1920px;
@@ -20,65 +21,39 @@
     /* padding: 0 30px; */
     position: relative;
     margin: 0 auto;
-    height: 826px;
+    /* height: 826px; */
 }
 .res_sec_wrap{
     width: 800px;
-    height: 826px;
+    /* height: 826px; */
     position: relative;
     margin-top: -100px;
 }
-.res_sec_list{
-    height: 716px;
-}
 .res_item{
-    float: left;
-    margin-left: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 253px;
+    display: grid;
+}
+.res_item2{
     height: 338px;
     width: 253px;
-    position: relative;
-    display: block;
-    margin-bottom: 20px;
     background-color: #fff;
+    position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.res_item:nth-child(1){margin-left: 0;}
-.res_item:nth-child(4){margin-left: 0;}
-.res_item:nth-child(7){margin-left: 0;}
-.res_item:nth-child(10){margin-left: 0;}
-.res_item_inner{
-    position: relative;
-    border: 10px solid #fff;
-}
-.res_item_img{
-    display: block;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 234px;
-    height: 318px;
-}
-.res_item_cont{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 35px 20px 0;
+.res_more{
+    cursor: pointer;
     text-align: center;
-}
-.res_item_type{
-    display: block;
-    margin-bottom: 14px;
-    color: #b39a78;
-    font-size: 14px;
-}
-.res_item_name{
-    color: #333;
-    font-size: 20px;
-    line-height: 26px;
-}
-.res_item_decs{
-    color: #666;
-    font-size: 15px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #79746e;
+    color: #fff;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin-top: 30px;
+    margin-left: 50%;
 }

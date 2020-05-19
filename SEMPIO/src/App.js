@@ -4,9 +4,11 @@ import './App.css';
 import Main from './routes/Main';
 import Market from './routes/Market';
 import { Footer, Header } from './component';
-import { Intro, Process, Result, Recipe } from './routes/Research';
-import { Can, Easycook, Fontana, Ganjang, Jang, Noodles, Ricevinega, Sauce, Tea, Yondu, Ziller } from './routes/Product';
-import { Campaign, Cooking, Doenjang, Fermentation, Heritage, Junior, Week } from './routes/Experience';
+import { Intro, Result, Recipe } from './routes/Research';
+import { Easycook, Fontana, Noodles } from './routes/Product';
+import { Fermentation, Heritage } from './routes/Experience';
+import Detail from './routes/Detail';
+import Detail2 from './routes/Detail2';
 
 
 
@@ -17,28 +19,16 @@ const App = () => {
                 <Switch>
                     <Route path="/" exact={true} component={Main}/>
                     <Route path="/intro" component={Intro}/>
-                    <Route path="/cooking" component={Cooking}/>
-                    <Route path="/week" component={Week}/>
-                    <Route path="/doenjang" component={Doenjang}/>
-                    <Route path="/yondu" component={Yondu}/>
                     <Route path="/fontana" component={Fontana}/>
-                    <Route path="/ricevinega" component={Ricevinega}/>
-                    <Route path="/ziller" component={Ziller}/>
-                    <Route path="/tea" component={Tea}/>
-                    <Route path="/jang" component={Jang}/>
                     <Route path="/noodles" component={Noodles}/>
-                    <Route path="/can" component={Can}/>
-                    <Route path="/sauce" component={Sauce}/>
                     <Route path="/easycook" component={Easycook}/>
-                    <Route path="/ganjang" component={Ganjang}/>
-                    <Route path="/campaign" component={Campaign}/>
                     <Route path="/fermentation" component={Fermentation}/>
-                    <Route path="/junior" component={Junior}/>
                     <Route path="/heritage" component={Heritage}/>
                     <Route path="/recipe/:page" component={Recipe}/>
                     <Route path="/market/:page" component={Market}/>
-                    <Route path="/process" component={Process}/>
                     <Route path="/result" component={Result}/>
+                    <Route path="/detail/:productId" component={Detail}/>
+                    <Route path="/detail2/:recipeId" component={Detail2}/>
                 </Switch>
             <Footer/>
         </BrowserRouter>

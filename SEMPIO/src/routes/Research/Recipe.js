@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Recipe.css';
 import CustomPagination from '../../component/CustomPagination';
-import ITEMS from '../../jsons/recipe.json'
+import ITEMS from '../../jsons/recipe.json';
 import Item2 from '../../component/Item2';
 
 const VIEW = 12;
@@ -34,8 +34,8 @@ const Recipe = ({ match }) => {
                                 {view.map((item) =>(
                                     <Item2 item={item}/>
                                 ))}
-                                <CustomPagination path={'recipe'} page={page} total={ITEMS.length} view={VIEW}/>
                             </div>  
+                            <CustomPagination path={'recipe'} page={page} total={ITEMS.length} view={VIEW}/>
                         </div>
                     </div>
                 </div>

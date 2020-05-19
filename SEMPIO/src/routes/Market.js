@@ -45,6 +45,17 @@ const Market = ({ match, history }) => {
                                     <div className="finder_title">
                                         <div className="finder_txt">제품검색</div>
                                     </div>
+                                    <div className="searchbox">
+                                        <div className="search_option">
+                                            <p className="search_total">
+                                                총<strong>213</strong>개
+                                            </p>
+                                            <div className="search_icon"></div>
+                                        </div>
+                                        <div className="search_query">
+                                            <div className="search_input">검색어 입력</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

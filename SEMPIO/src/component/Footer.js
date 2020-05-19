@@ -47,10 +47,8 @@ const Footer = () => {
                             <div className="contact2_top">
                                 <h2 className="fb_txt3">샘표식품 주식회사</h2>
                                 <ul>
-                                    <li className="fb_txt4">주소: (04557) 서울특별시 중구 충무로2  대표번호: 02-3393-5500</li>
-                                    <li className="fb_txt4">대표이사: 박진선 사업자 번호: 446-87-00473</li>
-                                    <li className="fb_txt4">통신판매업신고번호: 제 2016-서울중구-1160호</li>
-                                    <li className="fb_txt4">개인정보 보호책임자: 박광배 사업자정보 확인</li>
+                                    <li className="fb_txt4">주소: (04557) 서울특별시 중구 충무로2  대표번호: 02-3393-5500 대표이사: 박진선 사업자 번호: 446-87-00473</li>
+                                    <li className="fb_txt4">통신판매업신고번호: 제 2016-서울중구-1160호 개인정보 보호책임자: 박광배 사업자정보 확인</li>
                                 </ul>
                             </div>
                             <div className="contact2_bottom">

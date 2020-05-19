@@ -344,7 +344,7 @@ footer{
 }
 .contact2_bottom{
     display: block;
-    margin-top: 85px;
+    margin-top: 35px;
 }
 .contact2_bottom:after{
     content: '';

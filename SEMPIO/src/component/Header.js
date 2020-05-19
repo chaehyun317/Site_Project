@@ -22,7 +22,7 @@ const Header = () => {
                                             <Link to="/intro">소개</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/process">프로세스</Link>
+                                            <Link>프로세스</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link to="/result">연구결과</Link>
@@ -39,76 +39,92 @@ const Header = () => {
                                     <div className="label">우리맛 체험</div>
                                     <ul className="submenu">
                                         <li className="menuLink mL2">
-                                            <Link to="/cooking">샘표 우리맛 공간</Link>
+                                            <Link>샘표 우리맛 공간</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/week">우리맛 워크</Link>
+                                            <Link>우리맛 워크</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/campaign">맛있는 추억을 그리다</Link>
+                                            <Link>맛있는 추억을 그리다</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/doenjang">된장학교</Link>
+                                            <Link>된장학교</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link to="/fermentation">발효학교</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/junior">우리맛 주니어 연구원</Link>
+                                            <Link>우리맛 주니어 연구원</Link>
                                         </li>
-                                        <li className="menuLink">우리맛 특강</li>
+                                        <li className="menuLink">
+                                            <Link>우리맛 특강</Link>
+                                        </li>
                                         <li className="menuLink">
                                             <Link to="/heritage">샘표 헤리티지 스페이스</Link>
                                         </li>
-                                        <li className="menuLink">샘표 스페이스</li>
+                                        <li className="menuLink">
+                                            <Link>샘표 스페이스</Link>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li className="topMenu">
                                     <div className="label">샘표 소개</div>
                                     <ul className="submenu">
-                                        <li className="menuLink mL3">샘표</li>
-                                        <li className="menuLink">샘표 70년</li>
-                                        <li className="menuLink">샘표 CI</li>
-                                        <li className="menuLink">샘표소식</li>
-                                        <li className="menuLink">영상</li>
-                                        <li className="menuLink">공지사항</li>
+                                        <li className="menuLink mL3">
+                                            <Link>샘표</Link>
+                                        </li>
+                                        <li className="menuLink">
+                                            <Link>샘표 70년</Link>
+                                        </li>
+                                        <li className="menuLink">
+                                            <Link>샘표 CI</Link>
+                                        </li>
+                                        <li className="menuLink">
+                                            <Link>샘표소식</Link>
+                                        </li>
+                                        <li className="menuLink">
+                                            <Link>영상</Link>
+                                        </li>
+                                        <li className="menuLink">
+                                            <Link>공지사항</Link>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li className="topMenu">
                                     <div className="label">제품 소개</div>
                                     <ul className="submenu">
                                         <li className="menuLink mL4">
-                                            <Link to="yondu">연두</Link>
+                                            <Link>연두</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link to="/fontana">폰타나</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/ricevinega">백년동안</Link>
+                                            <Link>백년동안</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/ziller">질러</Link>
+                                            <Link>질러</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/tea">순작</Link>
+                                            <Link>순작</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/jang">샘표 장류</Link>
+                                            <Link>샘표 장류</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link to="/noodles">샘표 국수</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/can">샘표 통조림</Link>
+                                            <Link>샘표 통조림</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/sauce">샘표 기본양념</Link>
+                                            <Link>샘표 기본양념</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link to="/easycook">샘표 간편·양념</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/ganjang">샘표 간장</Link>
+                                            <Link>샘표 간장</Link>
                                         </li>
                                     </ul>
                                 </li>
