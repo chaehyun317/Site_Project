@@ -1,4 +1,4 @@
-function Outline(){
+function About(){
     var html = `
         <sec1>
             <div class="sub_v">
@@ -33,6 +33,9 @@ function Outline(){
                 </div>
             </div>
         </sec2>
+        <div class="location">
+            
+        </div>
     `;
     return html;
 }

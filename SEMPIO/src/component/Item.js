@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import './Item.css';
 import ImageURI from '../globals/ImageURI';
 import { Link } from 'react-router-dom';
+import AppContext from '../contexts/AppContext';
 
-const Item = ({ item: { id, name, price, src, best, gift } }) => {
+const nf = new Intl.NumberFormat();
+
+const Item = ({ item, item: { id, name, price, src, best, gift } }) => {
+    const { state, dispatch } = useContext(AppContext);
+    
+    const onCart = () => {
+        dispatch({ type: 'ADD_CART', data: {...item, count: 1}});
+    };
+
     return (
         <div className="ma_list">
             <Link to={`/detail/${id}`}>
@@ -21,11 +30,11 @@ const Item = ({ item: { id, name, price, src, best, gift } }) => {
                         {name}
                     </div>
                     <div className="ma_price">
-                        <span>{price}</span>원
+                        <span>{nf.format(price)}</span>원
                     </div>
                 </div>
             </Link>
-            <div className="item_cart">장바구니 담기</div>
+            <button className="item_cart" onClick={onCart}>장바구니 담기</button>
         </div>
     );
 };

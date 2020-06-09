@@ -4,11 +4,16 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <script src="routes/outline.js"></script>
     <script src="routes/main.js"></script>
+    <script src="routes/about.js"></script>
+    <script src="routes/greeting.js"></script>
+    <script src="routes/ourvalue.js"></script>
+    <script src="routes/sustainability.js"></script>
+    <script src="routes/rnd.js"></script>
     <script src="routes/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 </head>
 <body>
@@ -42,13 +47,13 @@
                 <li class="menu1">
                     <div class="label">효성중공업 소개</div>
                     <ul class="hyo_menu">
-                        <li onclick="route('Outline')" class="hyosung">개요</li>
+                        <li onclick="route('About')" class="hyosung">개요</li>
                         <li><a href="" class="hyosung">연혁</a></li>
-                        <li><a href="" class="hyosung">인사말</a></li>
-                        <li><a href="" class="hyosung">Hyosung Way</a></li>
-                        <li><a href="" class="hyosung">지속가능경영</a></li>
+                        <li onclick="route('Greeting')" class="hyosung">인사말</a></li>
+                        <li onclick="route('Ourvalue')" class="hyosung"></a>Hyosung Way</a></li>
+                        <li onclick="route('Sustainability')" class="hyosung">지속가능경영</a></li>
                         <li><a href="" class="hyosung">글로벌 네트워크</a></li>
-                        <li><a href="" class="hyosung">R&D</a></li>
+                        <li onclick="route('Rnd')" class="hyosung">R&D</a></li>
                     </ul>
                 </li>
                 <li class="menu1">
@@ -86,7 +91,155 @@
             <div class="bg"></div>
         </div>
     </header>
-    <div id="container"></div>
-    <script src="js/main.js"></script>
+    <div id="container">
+        <div class="sec3">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>    
+        <div class="sec4">
+            <div class="sec4_txt">Our products</div>
+            <div class="sec4_list">
+                <div class="list_t">
+                    <div class="box_sec">
+                        <div class="sec4_img box1">
+                            <div class="name">송배전설비</div>
+                        </div>
+                    </div>
+                    <div class="box_sec">
+                        <div class="sec4_img box2">
+                            <div class="name">시스템&엔지니어링 솔루션</div>
+                        </div>
+                    </div>
+                    <div class="box_sec">
+                        <div class="sec4_img box3">
+                            <div class="name">신재생에너지</div>
+                        </div>
+                    </div>
+                    <div class="box_sec">
+                        <div class="sec4_img box4">
+                            <div class="name">전동기&발전기</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_b">
+                    <div class="box_sec">
+                        <div class="sec4_img box5">
+                            <div class="name">산업기계</div>
+                        </div>
+                    </div>
+                    <div class="box_sec">
+                        <div class="sec4_img box6">
+                            <div class="name">기어솔루션</div>
+                        </div>
+                    </div>
+                    <div class="box_sec">
+                        <div class="sec4_img box7">
+                            <div class="name">용접솔루션</div>
+                        </div>
+                    </div>
+                    <div class="box_sec">
+                        <div class="sec4_img box8">
+                            <div class="name">건설(효성해링턴 플레이스)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec5">
+            <div class="sec5_txt">Our latest news</div>
+            <div class="sec5_list">
+                <div class="list2">
+                    <div class="box5_sec">
+                        <div class="sec5_img box9"></div>
+                        <div class="txt1">2020.02.27</div>
+                        <div class="txt2">효성, 코로나19 위기 극복에 ‘5억+의료용품’ 기부</div>
+                        <div class="txt3">효성이 신종 코로나바이러스 감염증(코로나19) 극복을 위해 대한적십자사에 성금 5…</div>
+                    </div>
+                    <div class="box5_sec">
+                        <div class="sec5_img box10"></div>
+                        <div class="txt1">2020.01.31</div>
+                        <div class="txt2">효성, 지주사 전환 후 첫 ‘지속가능경영보고서’ 발간</div>
+                        <div class="txt3">효성(회장 조현준)이 지주사 전환 후 첫 지속가능경영보고서를 발간했다.이번 보고서…</div>
+                    </div>
+                    <div class="box5_sec">
+                        <div class="sec5_img box11"></div>
+                        <div class="txt1">2020.01.31</div>
+                        <div class="txt2">효성 조현준 회장, 유럽 전력시장서 경영보폭 넓혀</div>
+                        <div class="txt3">효성 조현준 회장이 영국에 이어 스웨덴까지 유럽 전력시장에서 경영보폭을 넓히고 있…</div>
+                    </div>
+                </div>
+            </div>
+            <div class="more_plus">MORE</div>
+        </div>
+        <div class="sec6">
+            <div class="sec6_list">
+                <div class="list3">
+                    <div class="sec6_sec">
+                        <div class="sec6_img box12">
+                            <div class="sec6_txt1">효성해링턴 플레이스</div>
+                        </div>
+                    </div>
+                    <div class="sec6_sec">
+                        <div class="sec6_img box13">
+                            <div class="sec6_txt2">협력업체 동반성장</div>
+                        </div>
+                    </div>
+                    <div class="sec6_sec">
+                        <div class="sec6_img box14">
+                            <div class="sec6_txt3">전자구매 포털사이트</div>
+                        </div>
+                    </div>
+                    <div class="sec6_sec">
+                        <div class="sec6_img box15">
+                            <div class="sec6_txt4">서비스 이력조회</div>
+                        </div>
+                    </div>
+                    <div class="sec6_sec">
+                        <div class="sec6_img box16">
+                            <div class="sec6_txt5">고객문의</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="f_inner">
+            <ul class="util2">
+                <li>고객문의</li>
+                <li>채용</li>
+                <li>법적고지</li>
+                <li><strong>개인정보처리방침</strong></li>
+                <li>사이드맵</li>
+            </ul>
+            <div class="f_icon">
+                <ul class="f_icon_wa">
+                    <li>
+                        <img src="../효성중공업/img/f_icon1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../효성중공업/img/f_icon2.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="family_site">
+                <div class="family_site2">FAMILY SITE</div>
+            </div>
+            <div class="address">
+                <span class="addr">(04144)서울특별시 마포구 마포대로 119(공덕동)</span>
+                <div class="tel">중공업 부문 : 02-707-6000</div>
+                <div class="tel">건설 부문 : 02-707-4400</div>
+            </div>
+            <div class="copyright">COPYRIGHTⓒ  2018  HYOSUNG  HEAVY  INDUSTRIES.  ALL  RIGHTS  RESERVED.</div>
+        </div>
+    </footer>
+    <script src="js/main_1.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Main from './routes/Main';
@@ -9,14 +9,22 @@ import { Easycook, Fontana, Noodles } from './routes/Product';
 import { Fermentation, Heritage } from './routes/Experience';
 import Detail from './routes/Detail';
 import Detail2 from './routes/Detail2';
+import AppContext from './contexts/AppContext';
+import CartReducer from './reducers/CartReducer';
+import Cart from './routes/Cart';
 
-
+const initialState = {
+	cart: []
+};
 
 const App = () => {
+    const [state, dispatch] = useReducer(CartReducer, initialState);
+
     return (
         <BrowserRouter>
-            <Header/>
-                <Switch>
+            <Switch>
+                <AppContext.Provider value={{ state, dispatch }}>
+                    <Header/>
                     <Route path="/" exact={true} component={Main}/>
                     <Route path="/intro" component={Intro}/>
                     <Route path="/fontana" component={Fontana}/>
@@ -29,7 +37,9 @@ const App = () => {
                     <Route path="/result" component={Result}/>
                     <Route path="/detail/:productId" component={Detail}/>
                     <Route path="/detail2/:recipeId" component={Detail2}/>
-                </Switch>
+                    <Route path="/cart" component={Cart} />
+                </AppContext.Provider>
+            </Switch>
             <Footer/>
         </BrowserRouter>
     );

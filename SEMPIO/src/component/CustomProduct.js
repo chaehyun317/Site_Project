@@ -1,13 +1,16 @@
 import React from 'react';
+import '../component/CustomProduct.css';
+import CustomSlider from './CustomSlider';
 
-const CustomProduct = () => {
+
+const CustomProduct = ({ item: { name } }) => {
     return (
         <div className="p_wrap">
             <div className="p_content">
                 <div className="p_header">
                     <div className="p_h_cover">
                         <div className="p_h_inner">
-                            <div className="p_mark"></div>
+                            <div className="p_mark">{name}</div>
                             <div className="p_txt"></div>
                             <div className="p_txt2"></div>
                         </div>

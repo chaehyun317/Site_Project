@@ -1,7 +1,39 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import './Detail.css';
+import AppContext from '../contexts/AppContext';
 
 const Detail = ({ match: { params: { productId }}}) => {
+    const { state, dispatch } = useContext(AppContext);
+    const [count, setcount] = useState('1');
+    const tempItem = {
+        "id": productId, 
+        "name":"폰타나 데니쉬 오리지널 크림수프" + productId, 
+        "price": 960
+    };
+
+    const onChangecount = ev => {
+        const { target: { value } } = ev;
+        setcount(value);
+    };
+
+    const plus = () => {
+        if (Number(count) > 98) {
+            return;
+        }
+        setcount(String(Number(count) + 1));
+    };
+
+    const minus = () => {
+        if (Number(count) === 1) {
+            return;
+        }
+        setcount(String(Number(count) - 1));
+    };
+
+    const onCart = ()  => {
+        dispatch({ type: 'ADD_CART', data: {...tempItem, count: Number(count)}});
+    };
 
     useEffect(() => {
         // console.log(productId, '아이템을 누르셨습니다');
@@ -24,25 +56,30 @@ const Detail = ({ match: { params: { productId }}}) => {
                                 <div className="summary_option">
                                     <div className="option_checkbox">
                                         <h3 className="option_name">용량</h3>
-                                        <div className="option_left">275ml</div>
-                                        <div className="option_right">150ml</div>
+                                        <button className="option_left">30g</button>
+                                        <button className="option_right">90g</button>
                                     </div>
                                     <div className="option_count">
                                         <h3 className="option_name">수량</h3>
-                                        <div className="spinner">
-                                            <div className="spinner_num"></div>
-                                            <div className="spinner_left"></div>
-                                            <div className="spinner_right"></div>
+                                        <div className="count_box">
+                                            <span className="count_l" onClick={minus}>
+                                                <AiOutlineMinus/>
+                                            </span>
+                                                <input className="count_num" type="text" value={count} onChange={onChangecount}></input>
+                                            <span className="count_r" onClick={plus}>
+                                                <AiOutlinePlus/>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="summary_price_box">
-                                    <strong className="summary_price">960</strong>
-                                    원
+                                    <strong className="summary_price">
+                                        960
+                                    </strong>
                                 </div>
                                 <div className="summary_btn">
-                                    <div className="btn_left">장바구니</div>
-                                    <div className="btn_right">구매</div>
+                                    <button className="btn_basket" onClick={onCart}>장바구니</button>
+                                    <button className="btn_right">구매</button>
                                 </div>
                             </div>
                         </div>

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import AppContext from '../contexts/AppContext';
 
 
 const Header = () => {
+    const { state, dispatch } = useContext(AppContext);
     return (
         <header>
             <div className="h_wrap">
@@ -147,7 +149,12 @@ const Header = () => {
                                 <ul className="u_list">
                                     <li className="u_r">로그인</li>
                                     <li className="u_r">회원가입</li>
-                                    <li className="u_r">장바구니</li>
+                                    <li className="u_r ed">
+                                        <Link to="/cart">
+                                            장바구니 
+                                            <span className="red">{ state.cart.length }</span>
+                                        </Link>
+                                    </li>
                                     <li className="u_search"></li>
                                 </ul>
                             </div>
@@ -155,7 +162,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-    </header>
+        </header>
     );
 };
 

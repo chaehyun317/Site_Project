@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; box-sizing: border-box; list-style: none; text-decoration: none;}
+*{margin: 0; padding: 0; box-sizing: border-box; list-style: none; text-decoration: none; color: #444;}
 body{
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -168,6 +168,10 @@ header{
     height: 12px;
     margin-top: -5px;
     border-left: 1px solid #e0e0e0;
+}
+.red{
+    color: #b61c21;
+    font-weight: bold;
 }
 .u_search{
     width: 16px;

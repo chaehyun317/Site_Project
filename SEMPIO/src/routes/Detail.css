@@ -28,7 +28,10 @@
 .summary_img{
     width: 410px;
     height: 410px;
-    background-color: lightcyan;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/item8.png);
 }
 .summary_content{
     float: right;
@@ -94,45 +97,63 @@
     float: right;
     width: 195px;
 }
-.spinner{
-    position: relative;
-    padding-left: 34px;
-    padding-right: 34px;
-    display: block;
-    width: 178px;
-}
-.spinner_num{
-    width: 110px;
-    color: #444;
-    border-top: 1px solid #aea59a;
-    border-bottom: 1px solid #aea59a;
-    background-color: #fff;
-    text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+.count_box{
     height: 36px;
+    background-color: #fff;
+    position: relative;
 }
-.spinner_left{
-    left: 0;
+.count_box2{
+    height: 36px;
+    width: 120px;
+    background-color: #fff;
+    position: relative;
+    margin-left: 10px;
+}
+.count_l{
     position: absolute;
     top: 0;
-    background-color: #fff;
-    border: 1px solid #aea59a;
+    left: 0;
     width: 36px;
     height: 36px;
-    border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top: 1px solid #aea59a;
+    border-bottom: 1px solid #aea59a;
+    border-left: 1px solid #aea59a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.spinner_right{
+.count_r{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #fff;
-    border: 1px solid #aea59a;
     width: 36px;
     height: 36px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    border-top: 1px solid #aea59a;
+    border-bottom: 1px solid #aea59a;
+    border-right: 1px solid #aea59a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count_num{
+    height: 36px;
+    width: 123px;
+    position: absolute;
+    top: 0;
+    left: 36px;
+    text-align: center;
+}
+.count_num2{
+    height: 36px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 36px;
+    text-align: center;
 }
 .summary_price_box{
     font-size: 18px;
@@ -153,20 +174,18 @@
     bottom: -45px;
     width: 410px;
 }
-.btn_left{
+.btn_basket{
     float: left;
-    width: 200px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
-    color: #fff;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-radius: 3px;
+    color: #fff; 
     background-color: #79746e;
+    border: 1px solid #79746e;
+    width: 200px;
 }
 .btn_right{
     float: right;
@@ -177,11 +196,9 @@
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-radius: 3px;
     background-color: #b71c22;
+    border: 1px solid #b71c22;
 }
 .content_nav{
     font-size: 16px;
@@ -212,8 +229,11 @@
 }
 .info_banner{
     width: 860px;
-    height: 160px;
-    background-color: lightpink;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/info_fontana.jpg);
 }
 .info_sec1{
     border-top: 1px solid #e0e0e0;

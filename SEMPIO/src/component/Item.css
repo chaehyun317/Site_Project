@@ -41,7 +41,8 @@
     color: #b39a78;
     font-size: 15px;
     background-color: #fff;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0 !important;
+    border: 0;
     text-align: center;
     line-height: 45px;
 }

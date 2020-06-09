@@ -82,7 +82,7 @@ $(document).ready(function(){
             txt =
             `<div class='item'>
                 ${bestTag}
-                <input type='hidden' class="item_id" value="`+id+`">
+                <input type='hidden' class="item_id" value=`+id+`>
                 <div class='img ${className}'>
                     <img src='img2/`+src+`'>
                 </div>
