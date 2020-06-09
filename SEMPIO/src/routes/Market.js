@@ -6,35 +6,56 @@ import ITEMS from '../jsons/market.json';
 import CATEGORY from '../jsons/category.json';
 import { BsArrowClockwise } from 'react-icons/bs';
 import { AiOutlineSearch } from 'react-icons/ai';
+import CategoryItem from '../component/CategoryItem';
 
 const VIEW = 12;
 
 const Market = ({ match, history }) => {
-    // const page = match.params.page;
     const { params: { page } } = match;
-
     const [view, setView] = useState([]);
+    const [items, setItems] = useState([]);
     const [category, setCategory] = useState([]);
-    const [onType, setOnType] = useState(0);
+    const [onType, setOnType] = useState([]);
 
     const onSubmenu = type => {
         const after = category.map(item => item.id === type ? ({...item, view: !item.view}) : item );
         setCategory(after);
     };
+
+    const onCategory = type => {
+        const flag = onType.some(item => item === type);
+        if (flag) {
+            const types = onType.filter(item => item !== type);
+            setOnType(types);
+        } else {
+            const types = onType.concat(type);
+            setOnType(types);
+        }
+    };
     
     useEffect(() => {
-        const malist = ITEMS.filter(item => item.id === 'market');
-        setView(malist);
         const add = CATEGORY.map(item => ({...item, view: false}));
         setCategory(add);
     }, []);
+    
+    useEffect(() => {
+        if (onType.length === 0) {
+            setItems(ITEMS);
+        } else {
+            const after = ITEMS.filter(item => onType.indexOf(item.type) !== -1);
+            setItems(after);
+        }
+    }, [onType]);
 
     useEffect(() => {
         const start = (page - 1) * VIEW; 
-		const end = start + VIEW > ITEMS.length ? ITEMS.length - 1 : start + VIEW;
-		const _items = ITEMS.filter((item, idx) => (start <= idx && idx < end));
-		setView(_items);
-    }, [page]);
+        const end = start + VIEW > items.length ? items.length - 1 : start + VIEW;
+        const _items = items.filter((item, idx) => (start <= idx && idx < end));
+        setView(_items);
+    }, [items, page]);
+
+    // useEffect(() => {
+    // }, [page]);
     
     
     return (
@@ -49,7 +70,7 @@ const Market = ({ match, history }) => {
                                     <Item item={item}/>
                                 ))}
                             </div>
-                            <CustomPagination path={'market'} page={page} total={ITEMS.length} view={VIEW}/>
+                            <CustomPagination path={'market'} page={page} total={items.length} view={VIEW}/>
                         </div>
                         <div className="finder">
                             <div className="finder_spacer">
@@ -79,10 +100,7 @@ const Market = ({ match, history }) => {
                                             {item.view && (
                                                 <div className="small">
                                                     {item.small.map(smallItem => (
-                                                        <div className="check">
-                                                            <input type="checkbox" className="checkbox"></input>
-                                                            <div>{smallItem.name}</div>
-                                                        </div>
+                                                        <CategoryItem item={smallItem} onCategory={onCategory} />
                                                     ))}
                                                 </div>
                                             )}

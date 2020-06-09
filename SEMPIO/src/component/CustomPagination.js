@@ -15,7 +15,7 @@ const CustomPagination = ({ total, view, page, path }) => {
         const ct = Math.ceil(total / view);
         const _pages = [...Array(ct)].map((item, index) => (index + 1));
         setPages(_pages);
-    }, []);
+    }, [total]);
 
     return (
         <ul className="pagination">

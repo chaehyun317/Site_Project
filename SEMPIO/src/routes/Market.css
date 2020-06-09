@@ -126,6 +126,7 @@
 }
 .categorys{
     padding: 10px 20px 7px;
+    user-select: none;
 }
 .categoryItem h1{
     font-size: 15px;
