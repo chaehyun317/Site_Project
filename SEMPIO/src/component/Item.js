@@ -3,21 +3,16 @@ import './Item.css';
 import ImageURI from '../globals/ImageURI';
 import { Link } from 'react-router-dom';
 import AppContext from '../contexts/AppContext';
+import { FILE, API } from '../globals/api';
 
 const nf = new Intl.NumberFormat();
 
-const Item = ({ item, item: { id, name, price1, img1, img2, best, gift } }) => {
+const Item = ({ item, item: { id, name, unit1, price1, img1, best, gift } }) => {
     const { state, dispatch } = useContext(AppContext);
   
     
     const onCart = () => {
-        dispatch({ type: 'ADD_CART', data: {...item, count: 1}});
-        console.log(item);
-    };
-
-    const splitImg = img => {
-        const src = img.split('.');
-        return src[0];
+        dispatch({ type: 'ADD_CART', data: {...item, price: price1, unit: unit1, count: 1}});
     };
 
     return (
@@ -25,7 +20,7 @@ const Item = ({ item, item: { id, name, price1, img1, img2, best, gift } }) => {
             <Link to={`/detail/${id}`}>
                 <div className="ma_item">
                     <div className="ma_img">
-                        <img src={`${ImageURI[splitImg(img1)]}`} />
+                        <img src={`${FILE}/${img1}`} />
                         <div className="best">
                             <div className="best_icon">BEST{best}</div>
                         </div>

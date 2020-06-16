@@ -3,7 +3,7 @@ import './Fermentation.css';
 import { AiOutlineDown } from 'react-icons/ai';
 import {RenderAfterNavermapsLoaded, NaverMap, Marker} from 'react-naver-maps';
 
-const CLIENT_ID = process.env.CLIENT_ID;
+// const CLIENT_ID = process.env.CLIENT_ID;
 
 const Fermentation = () => {
     console.log(CLIENT_ID);
@@ -365,23 +365,23 @@ const Fermentation = () => {
                                             </dl>
                                         </div>
                                         <div className="sec4_map">
-                                        <RenderAfterNavermapsLoaded ncpClientId ={CLIENT_ID}>
-                                            <NaverMap 
-                                                id='maps-getting-started-controlled' 
-                                                style={{width: '100%', height: '450px'}}
-                                                
-                                                // uncontrolled zoom
-                                                defaultZoom={16}
+                                            {/* <RenderAfterNavermapsLoaded ncpClientId ={CLIENT_ID}>
+                                                <NaverMap 
+                                                    id='maps-getting-started-controlled' 
+                                                    style={{width: '100%', height: '450px'}}
+                                                    
+                                                    // uncontrolled zoom
+                                                    defaultZoom={16}
 
-                                                // controlled center
-                                                // Not defaultCenter={this.state.center}
-                                                center={{lat: 37.561676, lng: 126.993374}}
-                                                >
-                                                <Marker 
-                                                    position={{lat: 37.561676, lng: 126.993374}}
-                                                />
-                                            </NaverMap>
-                                        </RenderAfterNavermapsLoaded>
+                                                    // controlled center
+                                                    // Not defaultCenter={this.state.center}
+                                                    center={{lat: 37.561676, lng: 126.993374}}
+                                                    >
+                                                    <Marker 
+                                                        position={{lat: 37.561676, lng: 126.993374}}
+                                                    />
+                                                </NaverMap>
+                                            </RenderAfterNavermapsLoaded> */}
                                         </div>
                                     </div>
                                 </div>
