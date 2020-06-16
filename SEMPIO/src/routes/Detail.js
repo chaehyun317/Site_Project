@@ -2,29 +2,34 @@ import React, { useEffect, useState, useContext } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import './Detail.css';
 import AppContext from '../contexts/AppContext';
+import {API, FILE} from '../globals/api';
+import Axios from 'axios';
+
+const nf = new Intl.NumberFormat();
 
 const Detail = ({ match: { params: { productId }}}) => {
     const { state, dispatch } = useContext(AppContext);
     const [count, setcount] = useState('1');
-    const tempItem = {
-        "id": productId, 
-        "name":"폰타나 데니쉬 오리지널 크림수프" + productId, 
-        "price": 960
-    };
+    const [item, setItem] = useState("");
+    const [price, setPrice] = useState(0);
+    const [unit, setUnit] = useState('');
+    const [img, setImg] = useState([]);
 
     
-    // const getItems = () => {
-    //     Axios.post('http://fomalhaut.shop/api/SP_detailItem', { id: 3 }).then(res => {
-    //         const { data: { result, data } } = res;
-    //         if (result) {
-    //             setTotal(data);
-    //             setItems(data);
-    //             console.log(data[0]);
-    //         } else {
-    //             alert('네트워크 오류 발생!');
-    //         }
-    //     });
-    // };
+    const getItems = () => {
+        Axios.post(`${API}/SP_detailItem`, { id: productId }).then(res => {
+            const { data: { result, data } } = res;
+            if (result) {
+                // setTotal(data);
+                setItem(data);
+                setImg(data.img1);
+                setPrice(data.price1);
+                setUnit(data.unit1);
+            } else {
+                alert('네트워크 오류 발생!');
+            }
+        });
+    };
 
     const onChangecount = ev => {
         const { target: { value } } = ev;
@@ -46,11 +51,23 @@ const Detail = ({ match: { params: { productId }}}) => {
     };
 
     const onCart = ()  => {
-        dispatch({ type: 'ADD_CART', data: {...tempItem, count: Number(count)}});
+        dispatch({ type: 'ADD_CART', data: {...item, price, img, unit, count: Number(count)}});
+    };
+
+    const changeUnit = val => {
+      if (val === 1) {
+        setImg(item.img1);
+        setPrice(item.price1);
+        setUnit(item.unit1);
+    } else {
+        setImg(item.img2);
+        setPrice(item.price2);
+        setUnit(item.unit2);
+      }
     };
 
     useEffect(() => {
-        // console.log(productId, '아이템을 누르셨습니다');
+        getItems();
     }, [])
 
     // useEffect(() => {
@@ -63,19 +80,21 @@ const Detail = ({ match: { params: { productId }}}) => {
                     <div className="summary_box">
                         <div className="summary_inner">
                             <div className="summary_img_box">
-                                <div className="summary_img"></div>
+                                <div className="summary_img" style={{backgroundImage: `url(${FILE}/${img})`}}></div>
                             </div>
                             <div className="summary_content">
                                 <div className="summary_title">
-                                    <div className="summary_name">폰타나 데니쉬 오리지널 크림 수프</div>
+                                    <div className="summary_name">{item.name}</div>
                                     <div className="summary_desc">진하고 부드러운 크림 풍미가 가득한 덴마크식 수프 입니다.</div>
                                 </div>
                                 <div className="summary_shipping">30,000원 미만 구매 시 배송료 2,500원</div>
                                 <div className="summary_option">
                                     <div className="option_checkbox">
                                         <h3 className="option_name">용량</h3>
-                                        <button className="option_left">30g</button>
-                                        <button className="option_right">90g</button>
+                                        <button className="option_left" onClick={() => changeUnit(1)}>{item.unit1}</button>
+                                        {item.unit2 !== '' && (
+                                            <button className="option_right" onClick={() => changeUnit(2)}>{item.unit2}</button>
+                                        )}
                                     </div>
                                     <div className="option_count">
                                         <h3 className="option_name">수량</h3>
@@ -92,7 +111,7 @@ const Detail = ({ match: { params: { productId }}}) => {
                                 </div>
                                 <div className="summary_price_box">
                                     <strong className="summary_price">
-                                        960
+                                        {nf.format(price * count)}
                                     </strong>
                                 </div>
                                 <div className="summary_btn">

@@ -6,6 +6,7 @@ import CATEGORY from '../jsons/category.json';
 import { BsArrowClockwise } from 'react-icons/bs';
 import { AiOutlineSearch } from 'react-icons/ai';
 import CategoryItem from '../component/CategoryItem';
+import {API} from '../globals/api';
 import Axios from 'axios';
 
 const VIEW = 12;
@@ -35,7 +36,7 @@ const Market = ({ match, history }) => {
     };
 
     const getItems = () => {
-        Axios.get('http://fomalhaut.shop/api/SP_getItem').then(res => {
+        Axios.get(`${API}/SP_getItem`).then(res => {
             const { data: { result, data } } = res;
             if (result) {
                 setDataList(data);

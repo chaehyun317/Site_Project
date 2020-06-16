@@ -12,7 +12,7 @@ const Item = ({ item, item: { id, name, unit1, price1, img1, best, gift } }) => 
   
     
     const onCart = () => {
-        dispatch({ type: 'ADD_CART', data: {...item, price: price1, unit: unit1, count: 1}});
+        dispatch({ type: 'ADD_CART', data: {...item, price: price1, img: img1, unit: unit1, count: 1}});
     };
 
     return (
