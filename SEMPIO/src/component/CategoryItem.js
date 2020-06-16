@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-const CategoryItem = ({ onCategory, item: { id, name, type } }) => {
+const CategoryItem = ({ onCategory, onType, item: { id, name, type } }) => {
 	const [check, setCheck] = useState(false);
 	const onChangeCheck = ev => {
-		const { target: { checked } } = ev;
-		setCheck(checked);
 		onCategory(type);
 	};
+
+	useEffect(() => {
+		const flag = onType.some(item => item === type);
+		setCheck(flag);
+	}, [onType]);
 
 	return (
 		<label className="check">

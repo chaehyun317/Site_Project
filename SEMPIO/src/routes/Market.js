@@ -15,7 +15,7 @@ const Market = ({ match, history }) => {
     const { params: { page } } = match;
     const [view, setView] = useState([]);
     const [items, setItems] = useState([]);
-    const [datalist, setDataList] = useState([]);
+    const [dataList, setDataList] = useState([]);
     const [category, setCategory] = useState([]);
     const [onType, setOnType] = useState([]);
     const [keyword, setKeyword] = useState('');
@@ -40,13 +40,14 @@ const Market = ({ match, history }) => {
     const onchangekeyword = ev => {
         const { target: { value } } = ev;
         setKeyword(value);
-    }
+    };
 
     const searchItem = () => {
         Axios.post(`${API}/SP_searchItem`,{keyword}).then(res => {
             const { data: { result, data, error } } = res;
             if (result) {
                 setItems(data);
+                setOnType([]);
             } else {
                 console.log(error);
                 alert('네트워크 오류 발생!');
@@ -60,9 +61,20 @@ const Market = ({ match, history }) => {
             if (result) {
                 setDataList(data);
                 setItems(data);
-                // console.log(data);
             } else {
                 alert('네트워크 오류 발생!');
+            }
+        });
+    };
+
+    const getCategoryItem = () => {
+        Axios.post(`${API}/SP_getCategory`, {list: onType}).then(res => {
+            const { data: { result, data, sql } } = res;
+            if (result) {
+                setItems(data);
+                history.push('/market/1');
+            } else {
+                alert('네크워크 오류 발생');
             }
         });
     };
@@ -74,16 +86,22 @@ const Market = ({ match, history }) => {
     
     useEffect(() => {
         if (onType.length === 0) {
-            setItems(datalist);
+            if (keyword === '') {
+                setItems(dataList);
+            } else {
+                setKeyword('');
+                setCategory([]);
+                const add = CATEGORY.map(item => ({...item, view: false}));
+                setCategory(add);
+            }
         } else {
-            const after = datalist.filter(item => onType.indexOf(item.type) !== -1);
-            setItems(after);
+            getCategoryItem();
         }
     }, [onType]);
 
     useEffect(() => {
         const start = (page - 1) * VIEW; 
-        const end = start + VIEW > items.length ? items.length - 1 : start + VIEW;
+        const end = start + VIEW > items.length ? items.length : start + VIEW;
         const _items = items.filter((item, idx) => (start <= idx && idx < end));
         setView(_items);
     }, [items, page]);
@@ -132,13 +150,13 @@ const Market = ({ match, history }) => {
                                     {category.map(item => (
                                         <div className="categoryItem">
                                             <h1 onClick={() => onSubmenu(item.id)}>{item.label}</h1>
-                                            {item.view && (
-                                                <div className="small">
+                                            {/* {item.view && ( */}
+                                                <div className="small" style={{ display: item.view ? 'block' : 'none'}}>
                                                     {item.small.map(smallItem => (
-                                                        <CategoryItem item={smallItem} onCategory={onCategory} />
+                                                        <CategoryItem item={smallItem} onCategory={onCategory} onType={onType}/>
                                                     ))}
                                                 </div>
-                                            )}
+                                            {/* )} */}
                                         </div>
                                     ))}
                                 </div>
