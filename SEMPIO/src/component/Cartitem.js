@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import AppContext from '../contexts/AppContext';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import '../routes/Cart.css';
+import { FILE } from '../globals/api';
 
 const nf = new Intl.NumberFormat();
 
@@ -31,18 +32,16 @@ const CartItem = ({ item }) => {
 		dispatch({ type: 'REMOVE_ITEM', data: { id: item.id } });
 	};
 
-	
-
 	return (
 		<div>
 			<div className="order item_cont">
 				<div className="order_inner">
 					<input type="checkbox" className="o_col checkbox"></input>
 					<div className="o_col t_title">
-						<div className="td_thumb"></div>
+						<div className="td_thumb" style={{backgroundImage: `url(${FILE}/${item.img})`}}></div>
 						<div className="td_cont">
 							<div className="m_name">{item.name}</div>
-							<div className="m_capacity">용량: 30g</div>
+							<div className="m_capacity">용량: {item.unit}</div>
 						</div>
 					</div>
 					<div className="o_col t_price">

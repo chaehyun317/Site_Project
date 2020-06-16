@@ -15,7 +15,6 @@ const Cart = () => {
     const [billPrice, setBillPrice] = useState(0);
 
 	useEffect(() => {
-        console.log(state.cart);
 		const _totalAmount = state.cart.reduce((acc, cur) => {
 			acc = acc + cur.price * cur.count;
 			return acc;

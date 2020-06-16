@@ -14,6 +14,7 @@ const Detail = ({ match: { params: { productId }}}) => {
     const [price, setPrice] = useState(0);
     const [unit, setUnit] = useState('');
     const [img, setImg] = useState([]);
+    const [type, setType] = useState(1);
 
     
     const getItems = () => {
@@ -25,6 +26,7 @@ const Detail = ({ match: { params: { productId }}}) => {
                 setImg(data.img1);
                 setPrice(data.price1);
                 setUnit(data.unit1);
+                setType(1);
             } else {
                 alert('네트워크 오류 발생!');
             }
@@ -51,18 +53,21 @@ const Detail = ({ match: { params: { productId }}}) => {
     };
 
     const onCart = ()  => {
-        dispatch({ type: 'ADD_CART', data: {...item, price, img, unit, count: Number(count)}});
+        dispatch({ type: 'ADD_CART', data: {...item, id: type === 1 ? item.id : item.id + 10000, price, img, unit, count: Number(count)}});
     };
 
     const changeUnit = val => {
+      setType(val);
       if (val === 1) {
         setImg(item.img1);
         setPrice(item.price1);
         setUnit(item.unit1);
+        setType(1);
     } else {
         setImg(item.img2);
         setPrice(item.price2);
         setUnit(item.unit2);
+        setType(2);
       }
     };
 
