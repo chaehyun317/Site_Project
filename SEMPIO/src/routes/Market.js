@@ -18,6 +18,8 @@ const Market = ({ match, history }) => {
     const [datalist, setDataList] = useState([]);
     const [category, setCategory] = useState([]);
     const [onType, setOnType] = useState([]);
+    const [keyword, setKeyword] = useState('');
+
 
     const onSubmenu = type => {
         const after = category.map(item => item.id === type ? ({...item, view: !item.view}) : item );
@@ -33,6 +35,23 @@ const Market = ({ match, history }) => {
             const types = onType.concat(type);
             setOnType(types);
         }
+    };
+
+    const onchangekeyword = ev => {
+        const { target: { value } } = ev;
+        setKeyword(value);
+    }
+
+    const searchItem = () => {
+        Axios.post(`${API}/SP_searchItem`,{keyword}).then(res => {
+            const { data: { result, data, error } } = res;
+            if (result) {
+                setItems(data);
+            } else {
+                console.log(error);
+                alert('네트워크 오류 발생!');
+            }
+        });
     };
 
     const getItems = () => {
@@ -104,8 +123,8 @@ const Market = ({ match, history }) => {
                                             </div>
                                         </div>
                                         <div className="input_box">
-                                            <input placeholder="검색어 입력" className="search_input"></input>
-                                            <button className="input_icon"><AiOutlineSearch/></button>
+                                            <input placeholder="검색어 입력" value={keyword} onChange={onchangekeyword} className="search_input"></input>
+                                            <button className="input_icon" onClick={searchItem}><AiOutlineSearch/></button>
                                         </div>
                                     </div>
                                 </div>
