@@ -108,13 +108,13 @@ const Header = () => {
                                             <Link>질러</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link>순작</Link>
+                                            <Link to="/tea">순작</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link>샘표 장류</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/noodles">샘표 국수</Link>
+                                            <Link>샘표 국수</Link>
                                         </li>
                                         <li className="menuLink">
                                             <Link>샘표 통조림</Link>
@@ -123,10 +123,10 @@ const Header = () => {
                                             <Link>샘표 기본양념</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link to="/easycook">샘표 간편·양념</Link>
+                                            <Link>샘표 간편·양념</Link>
                                         </li>
                                         <li className="menuLink">
-                                            <Link>샘표 간장</Link>
+                                            <Link to="/ganjang">샘표 간장</Link>
                                         </li>
                                     </ul>
                                 </li>

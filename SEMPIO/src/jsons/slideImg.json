@@ -10,14 +10,19 @@
     {"id": 13, "className": "img13", "type": "fontana"},
     {"id": 14, "className": "img14", "type": "fontana"},
 
-    {"id": 46, "className": "img46", "type": "Noodles"},
-    {"id": 47, "className": "img47", "type": "Noodles"},
-    {"id": 48, "className": "img48", "type": "Noodles"},
-    
-    {"id": 64, "className": "img64", "type": "easycook"},
-    {"id": 65, "className": "img65", "type": "easycook"},
-    {"id": 66, "className": "img66", "type": "easycook"},
-    {"id": 67, "className": "img67", "type": "easycook"},
-    {"id": 68, "className": "img68", "type": "easycook"},
-    {"id": 69, "className": "img69", "type": "easycook"}
+    {"id": 15, "className": "img15", "type": "tea"},
+    {"id": 16, "className": "img16", "type": "tea"},
+    {"id": 17, "className": "img17", "type": "tea"},
+    {"id": 18, "className": "img18", "type": "tea"},
+    {"id": 19, "className": "img19", "type": "tea"},
+    {"id": 20, "className": "img20", "type": "tea"},
+    {"id": 21, "className": "img21", "type": "tea"},
+    {"id": 22, "className": "img22", "type": "tea"},
+
+    {"id": 23, "className": "img23", "type": "ganjang"},
+    {"id": 24, "className": "img24", "type": "ganjang"},
+    {"id": 25, "className": "img25", "type": "ganjang"},
+    {"id": 26, "className": "img26", "type": "ganjang"},
+    {"id": 27, "className": "img27", "type": "ganjang"},
+    {"id": 28, "className": "img28", "type": "ganjang"}
 ]

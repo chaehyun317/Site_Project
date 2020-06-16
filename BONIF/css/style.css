@@ -53,8 +53,10 @@ header{
 .submenu{
     position: absolute;
     height: 0;
+    top: -5px;
+    border-top: 1px solid #87af0f;
     overflow: hidden;
-    transition: height .5s;
+    transition: height .1s;
     -webkit-transition: height;
     -moz-transition: height;
     -o-transition: height;
@@ -98,6 +100,9 @@ header{
     transition: heigth .5s;
 }
 .h_inner:hover + .bg{
+    display: block;
+}
+.bg:hover, .submenu:hover {
     display: block;
 }
 .gnb2{

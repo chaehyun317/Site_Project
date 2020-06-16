@@ -1,5 +1,6 @@
 import React from 'react';
 import './Heritage.css';
+import { AiOutlineDown } from 'react-icons/ai';
 
 const Heritage = () => {
     return (
@@ -23,11 +24,42 @@ const Heritage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="he_sec3">
-                        <div className="he_sec3_wrap">
-                            <div className="he_sec3_inner">
-                                <div className="he_sec3_box">
-                                    <div className="he_sec3_box_wrap"></div>
+                    <div className="fer_sec4">
+                        <div className="fer_sec4_wrap">
+                            <div className="fer_sec4_inner">
+                                <div className="fer_sec2_txt">
+                                    <div className="fer_sec4_box2">
+                                        <div className="sec4_header">
+                                            <div className="sec4_h_inner">
+                                                <div className="selector">
+                                                    <span className="selector_title">장소명</span>
+                                                    <span className="selector_txt">샘표 헤리티지 스페이스</span>
+                                                    <span className="selector_icon"><AiOutlineDown/></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="sec4_cont">
+                                            <dl className="sec4_info_box">
+                                                <dt className="info_txt1">주소</dt>
+                                                <dd className="info_txt2">(우 : 04557) 서울특별시 중구 충무로2 매일경제 별관 1층 샘표 우리맛 공간</dd>
+                                            </dl>
+                                            <dl className="sec4_info_box">
+                                                <dt className="info_txt1">전화번호</dt>
+                                                <dd className="info_txt2">02) 3393-5357</dd>
+                                            </dl>
+                                            <dl className="sec4_info_box">
+                                                <dt className="info_txt1">오시는 길</dt>
+                                                <dd className="info_txt2">지하철 이용시:</dd>
+                                                <dd className="info_txt3">지하철 3, 4호선 충무로역 7번출구 앞</dd>
+                                                <dd className="info_txt4">버스이용시 :</dd>
+                                                <dd className="info_txt3">대한극장 앞 (충무로역 2번 출구) 버스노선 104, 421, 463, 507, N16</dd>
+                                                <dd className="info_txt3">퇴계로 3가. 한옥마을. 한국의 집(충무로역 4번 출구)104, 421, 463, 507</dd>
+                                                <dd className="info_txt3">퇴계로 3가. 한옥마을. 한국의 집(충무로역 4번 출구)104, 421, 463, 507, N1퇴계로 3가. 한옥마을. 한국의 집 (충무로역 5번 출구) 104, 105, 140, 421, 463, 507, 604, N16</dd>
+                                                <dd className="info_txt3">구)매일경제 앞 (충무로역 7번 출구) 버스노선 604, 7011</dd>
+                                            </dl>
+                                        </div>
+                                        <div className="sec4_map"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

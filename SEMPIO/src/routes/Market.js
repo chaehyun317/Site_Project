@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Market.css';
 import CustomPagination from '../component/CustomPagination';
 import Item from './../component/Item';
-import ITEMS from '../jsons/market.json';
 import CATEGORY from '../jsons/category.json';
 import { BsArrowClockwise } from 'react-icons/bs';
 import { AiOutlineSearch } from 'react-icons/ai';
 import CategoryItem from '../component/CategoryItem';
+import Axios from 'axios';
 
 const VIEW = 12;
 
@@ -14,6 +14,7 @@ const Market = ({ match, history }) => {
     const { params: { page } } = match;
     const [view, setView] = useState([]);
     const [items, setItems] = useState([]);
+    const [datalist, setDataList] = useState([]);
     const [category, setCategory] = useState([]);
     const [onType, setOnType] = useState([]);
 
@@ -32,6 +33,19 @@ const Market = ({ match, history }) => {
             setOnType(types);
         }
     };
+
+    const getItems = () => {
+        Axios.get('http://fomalhaut.shop/api/SP_getItem').then(res => {
+            const { data: { result, data } } = res;
+            if (result) {
+                setDataList(data);
+                setItems(data);
+                // console.log(data);
+            } else {
+                alert('네트워크 오류 발생!');
+            }
+        });
+    };
     
     useEffect(() => {
         const add = CATEGORY.map(item => ({...item, view: false}));
@@ -40,9 +54,9 @@ const Market = ({ match, history }) => {
     
     useEffect(() => {
         if (onType.length === 0) {
-            setItems(ITEMS);
+            setItems(datalist);
         } else {
-            const after = ITEMS.filter(item => onType.indexOf(item.type) !== -1);
+            const after = datalist.filter(item => onType.indexOf(item.type) !== -1);
             setItems(after);
         }
     }, [onType]);
@@ -54,8 +68,9 @@ const Market = ({ match, history }) => {
         setView(_items);
     }, [items, page]);
 
-    // useEffect(() => {
-    // }, [page]);
+    useEffect(() => {
+        getItems()
+    }, []);
     
     
     return (
@@ -87,8 +102,8 @@ const Market = ({ match, history }) => {
                                                 <span><BsArrowClockwise/></span>
                                             </div>
                                         </div>
-                                        <div className="search_query">
-                                            <div type="search" className="search_input">검색어 입력</div>
+                                        <div className="input_box">
+                                            <input placeholder="검색어 입력" className="search_input"></input>
                                             <button className="input_icon"><AiOutlineSearch/></button>
                                         </div>
                                     </div>

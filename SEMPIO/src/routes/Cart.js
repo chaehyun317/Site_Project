@@ -5,6 +5,7 @@ import CartItem from '../component/Cartitem';
 import './Cart.css';
 import { Link } from 'react-router-dom';
 
+
 const nf = new Intl.NumberFormat();
 const DELIVERY = 2500;
 
@@ -12,11 +13,6 @@ const Cart = () => {
     const { state, dispatch } = useContext(AppContext);
     const [totalAmount, setTotalAmount] = useState(0);
     const [billPrice, setBillPrice] = useState(0);
-
-	// const removeAll = () => {
-	// 	dispatch({ type: 'REMOVE_ALL' });
-    // };
-    
 
 	useEffect(() => {
         console.log(state.cart);
@@ -29,11 +25,12 @@ const Cart = () => {
     
     useEffect(() => {
         const _billPrice = state.cart.reduce((acc, cur) => {
-            acc = cur.price * cur.count;
+            acc = acc + cur.price * cur.count;
             return acc;
         }, 0);
         setBillPrice(_billPrice);
     }, [state.cart]);
+
 
     return (
         <div className="cart_wrap">
@@ -63,7 +60,7 @@ const Cart = () => {
                     <div className="o_section">
                         <h2 className="o_txt2">
                             주문 리스트
-                            <span className="o_txt2_1">0/1</span>
+                            <span className="o_txt2_1">0/{ state.cart.length }</span>
                             개
                         </h2>
                         <div className="list">

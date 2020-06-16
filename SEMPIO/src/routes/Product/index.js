@@ -1,7 +1,8 @@
-import Easycook from './Easycook';
 import Fontana from './Fontana';
-import Noodles from './Noodles';
+import Tea from './Tea';
+import Ganjang from './Ganjang';
+
 
 export {
-     Easycook, Fontana, Noodles
+     Ganjang, Fontana, Tea
 };

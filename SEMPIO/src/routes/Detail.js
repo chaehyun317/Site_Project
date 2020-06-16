@@ -12,6 +12,20 @@ const Detail = ({ match: { params: { productId }}}) => {
         "price": 960
     };
 
+    
+    // const getItems = () => {
+    //     Axios.post('http://fomalhaut.shop/api/SP_detailItem', { id: 3 }).then(res => {
+    //         const { data: { result, data } } = res;
+    //         if (result) {
+    //             setTotal(data);
+    //             setItems(data);
+    //             console.log(data[0]);
+    //         } else {
+    //             alert('네트워크 오류 발생!');
+    //         }
+    //     });
+    // };
+
     const onChangecount = ev => {
         const { target: { value } } = ev;
         setcount(value);
@@ -38,6 +52,10 @@ const Detail = ({ match: { params: { productId }}}) => {
     useEffect(() => {
         // console.log(productId, '아이템을 누르셨습니다');
     }, [])
+
+    // useEffect(() => {
+    //     getItems()
+    // }, []);
     return(
         <div className="wrap">
             <div className="sec">

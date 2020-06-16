@@ -31,6 +31,8 @@ const CartItem = ({ item }) => {
 		dispatch({ type: 'REMOVE_ITEM', data: { id: item.id } });
 	};
 
+	
+
 	return (
 		<div>
 			<div className="order item_cont">
