@@ -1,6 +1,9 @@
 import React from 'react';
 import './Heritage.css';
 import { AiOutlineDown } from 'react-icons/ai';
+import {RenderAfterNavermapsLoaded, NaverMap, Marker} from 'react-naver-maps';
+
+const CLIENT_ID = process.env.CLIENT_ID;
 
 const Heritage = () => {
     return (
@@ -41,7 +44,7 @@ const Heritage = () => {
                                         <div className="sec4_cont">
                                             <dl className="sec4_info_box">
                                                 <dt className="info_txt1">주소</dt>
-                                                <dd className="info_txt2">(우 : 04557) 서울특별시 중구 충무로2 매일경제 별관 1층 샘표 우리맛 공간</dd>
+                                                <dd className="info_txt2">(우 : 04557) 서울특별시 중구 충무로2 매일경제 별관 10층 샘표 헤리티지</dd>
                                             </dl>
                                             <dl className="sec4_info_box">
                                                 <dt className="info_txt1">전화번호</dt>
@@ -58,7 +61,25 @@ const Heritage = () => {
                                                 <dd className="info_txt3">구)매일경제 앞 (충무로역 7번 출구) 버스노선 604, 7011</dd>
                                             </dl>
                                         </div>
-                                        <div className="sec4_map"></div>
+                                        <div className="sec4_map">
+                                            <RenderAfterNavermapsLoaded ncpClientId ={CLIENT_ID}>
+                                                <NaverMap 
+                                                    id='maps-getting-started-controlled' 
+                                                    style={{width: '640px', height: '450px'}}
+                                                    
+                                                    // uncontrolled zoom
+                                                    defaultZoom={16}
+
+                                                    // controlled center
+                                                    // Not defaultCenter={this.state.center}
+                                                    center={{lat: 37.561676, lng: 126.993374}}
+                                                    >
+                                                    <Marker 
+                                                        position={{lat: 37.561676, lng: 126.993374}}
+                                                    />
+                                                </NaverMap>
+                                            </RenderAfterNavermapsLoaded>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

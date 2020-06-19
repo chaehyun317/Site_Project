@@ -15,6 +15,7 @@ const Detail = ({ match: { params: { productId }}}) => {
     const [unit, setUnit] = useState('');
     const [img, setImg] = useState([]);
     const [type, setType] = useState(1);
+    const [description, setDescripton] = useState("");
 
     
     const getItems = () => {
@@ -27,6 +28,7 @@ const Detail = ({ match: { params: { productId }}}) => {
                 setPrice(data.price1);
                 setUnit(data.unit1);
                 setType(1);
+                setDescripton(data.description);
             } else {
                 alert('네트워크 오류 발생!');
             }
@@ -53,7 +55,7 @@ const Detail = ({ match: { params: { productId }}}) => {
     };
 
     const onCart = ()  => {
-        dispatch({ type: 'ADD_CART', data: {...item, id: type === 1 ? item.id : item.id + 10000, price, img, unit, count: Number(count)}});
+        dispatch({ type: 'ADD_CART', data: {...item, id: type === 1 ? item.id : item.id + 10000, price, img, unit, description,  count: Number(count)}});
     };
 
     const changeUnit = val => {
@@ -90,7 +92,7 @@ const Detail = ({ match: { params: { productId }}}) => {
                             <div className="summary_content">
                                 <div className="summary_title">
                                     <div className="summary_name">{item.name}</div>
-                                    <div className="summary_desc">진하고 부드러운 크림 풍미가 가득한 덴마크식 수프 입니다.</div>
+                                    <div className="summary_desc">{item.description}</div>
                                 </div>
                                 <div className="summary_shipping">30,000원 미만 구매 시 배송료 2,500원</div>
                                 <div className="summary_option">

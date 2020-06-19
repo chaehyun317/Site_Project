@@ -142,7 +142,7 @@ const Market = ({ match, history }) => {
                                         </div>
                                         <div className="input_box">
                                             <input placeholder="검색어 입력" value={keyword} onChange={onchangekeyword} className="search_input"></input>
-                                            <button className="input_icon" onClick={searchItem}><AiOutlineSearch/></button>
+                                            <button className="input_icon" onClick={searchItem}><AiOutlineSearch onClick={onclick}/></button>
                                         </div>
                                     </div>
                                 </div>
