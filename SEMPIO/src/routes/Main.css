@@ -4,22 +4,29 @@
 }
 .m_banner{
     max-width: 1920px;
-    height: 641px;
+    height: 640px;
     margin: 0 auto;
     position: relative;
-    /* background-image: url(../img/m_banner.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
-.foreground{
-    /* position: absolute; */
-    max-width: 1920px;
-    height: 641px;
-    pointer-events: none;
-}
-#myVideo{
+.m_banner_ani{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 640px;
+    background-image: url(../img/m_banner5.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation-name: change2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes change2{
+    33%{background-image: url(../img/m_banner4.png);}
+    66%{background-image: url(../img/m_banner2.png);}
+    100%{background-image: url(../img/m_banner5.png);}
 }
 .m_list{
     max-width: 1920px;

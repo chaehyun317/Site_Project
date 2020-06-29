@@ -358,24 +358,7 @@ $(document).ready(function(){
             summary:"통영에서 올라온 탱글탱글 영양 가득한 굴이 두 배로 가득! 시원하고<br>개운한 국물맛의 비결! 바다의 영양을 듬뿍 담은 뚝배기 한 그릇을<br>즐기세요.", half1:"img22_4.jpg", half2:"img57_2.jpg",
             b_txt1:"신선한 통영의 맛과 향을 듬뿍<br><strong>특통영 굴뚝배기</strong>", b_txt3:"바다향 가득<br><strong>통영굴</strong>", b_txt5:"특통영 굴뚝배기",
             b_txt2:"통영에서 올라온 탱글탱글 영양 가득한 굴이 두 배로 가득! 시원하고 개운한 국물맛의 비결!<br>바다의 영양을 듬뿍 담은 뚝배기 한 그릇을 즐기세요.<br>무, 호박 나물과 어우러져 더욱 깔끔하고 건강한 국물 맛을 만나실 수 있습니다.<br>신선한 통영의 맛과 향을 그대로 느껴보세요.",
-            b_txt4:"바다의 향이 물씬,<br>통통하게 살이 오른 굴을 베어물면<br>통영의 신선함을 그대로 느낄 수 있습니다.<br>뽀얗고 탱글한 굴의 깊은 맛이 육수 가득 우러나와<br>뜨끈하고 시원한 국물의 깊이를 완성합니다.<br>맛은 물론 향까지 풍성한 한 그릇을 만나보세요."},
-          
-        { id:58, type: 2, name:"담양식숯불떡갈비", price: 4000, src:"img58.jpg", best:false, new:false,  desc:"한돈으로 도톰하게 빚은 육즙 가득한 떡갈비", viewOne:"img58.jpg", viewTwo:"img37_4.jpg", detailImg:"img58_2.jpg",
-            summary:"도툼한 국내산 돼지고기에 숯불향을 입혀<br>더욱 맛있는 떡갈비", half1:"img58.jpg", half2:"img37_4.jpg",
-            b_txt1:"한돈으로 도톰하게 빚은 육즙 가득<br><strong>담양식 숯불 떡갈비</strong>",
-            b_txt2:"풍부한 육즙 가득한 두툼한 떡갈비!<br>자작하게 배인 숯불향 갈비 소스는 입 안 가득 감칠맛을 더합니다.<br>한 입 가득 베어 무는 순간,<br>두께만큼 풍족한 만족감은 물론 씹는 맛까지<br>즐거움을 배로 경험하실 수 있습니다.<br><br>알맞게 잘 익은 양파와 대파까지 곁들여<br>마지막 한 입까지 행복한 맛을 만나세요.<br>어른, 아이 누구나 좋아하는 탱글탱글한 떡갈비로<br>더 풍성한 식사를 완성하실 수 있습니다."},
-          
-        { id:59, type: 2, name:"육즙가득 알새우만두", price: 5000, src:"img59.jpg", best:false, new:false,  desc:"탱글한 새우와 촉촉한 육즙 한 가득", viewOne:"img59.jpg", viewTwo:"img59_2.jpg", detailImg:"img59_3.jpg",
-            summary:"베어 물 때마다 알새우가 톡톡! 육즙까지 톡톡 터지는 새우만두!", half1:"img59.jpg", half2:"img59_2.jpg",
-            b_txt1:"탱글한 새우와 촉촉한 육즙 한 가득<br><strong>육즙가득 알새우만두</strong>",
-            b_txt2:"베어 물 때마다 알새우가 톡톡! 육즙까지 톡톡 터지는 새우만두!<br>탱글탱글한 식감까지 완벽한 황홀한 맛.<br>한 입 가득 고소하고 촉촉한 육즙으로 더 풍성하고 즐거운 식사를 만들어 보세요."},
-          
-        { id:60, type: 2, name:"쫄깃감자 찐만두", price: 5000, src:"img60.jpg", best:false, new:false,  desc:"쫄깃쫄깃 고소한 매력", viewOne:"img60.jpg", viewTwo:"img60_2.jpg", detailImg:"img60_3.jpg",
-            summary:"투명하고 쫀득한 감자 만두피로 탱탱한 식감을! 꽉 찬 만두속으로<br>촉촉한 육즙까지 가득!", half1:"img60.jpg", half2:"img60_2.jpg",
-            b_txt1:"쫄깃쫄깃 고소한 매력<br><strong>쫄깃감자 찐만두</strong>",
-            b_txt2:"투명하고 쫀득한 감자 만두피로 탱탱한 식감을! 꽉 찬 만두속으로 촉촉한 육즙까지 가득!<br>다양한 한식 메뉴와 곁들임으로도, 출출할 때 간식으로도 좋은 쫄깃한 찐만두를 즐겨보세요."},
-          
-        { id:35, type: 6, name:"든든한 장조림", price: 2900, src:"img35.jpg", best:false, new:false,  viewOne:"img35.jpg", viewTwo:"img35.jpg", detailImg:"img35.jpg", half1:"img35.jpg", half2:"img35.jpg",},
+            b_txt4:"바다의 향이 물씬,<br>통통하게 살이 오른 굴을 베어물면<br>통영의 신선함을 그대로 느낄 수 있습니다.<br>뽀얗고 탱글한 굴의 깊은 맛이 육수 가득 우러나와<br>뜨끈하고 시원한 국물의 깊이를 완성합니다.<br>맛은 물론 향까지 풍성한 한 그릇을 만나보세요."}
     ];
 
     var item_id = getUrlParameter('item_id');
@@ -430,6 +413,15 @@ $(document).ready(function(){
     function comma(num){
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
+});
+
+$(document).ready(function(){
+    $(document).on('click', '.view1', function(){
+        var src = $(this).children('img').attr('src');
+        console.log(src);
+        $('#item_img').attr('src', src);
+    })
+    
 });
 
 $(document).ready(function(){

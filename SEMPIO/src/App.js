@@ -39,9 +39,9 @@ const App = () => {
                     <Route path="/detail/:productId" component={Detail}/>
                     <Route path="/detail2/:recipeId" component={Detail2}/>
                     <Route path="/cart" component={Cart} />
+                    <Footer/>
                 </AppContext.Provider>
             </Switch>
-            <Footer/>
         </BrowserRouter>
     );
 };

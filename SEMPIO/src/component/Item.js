@@ -7,7 +7,7 @@ import { FILE, API } from '../globals/api';
 
 const nf = new Intl.NumberFormat();
 
-const Item = ({ item, item: { id, name, unit1, price1, img1, best, gift } }) => {
+const Item = ({ item, item: { id, name, unit1, price1, img1 } }) => {
     const { state, dispatch } = useContext(AppContext);
   
     
@@ -21,12 +21,6 @@ const Item = ({ item, item: { id, name, unit1, price1, img1, best, gift } }) => 
                 <div className="ma_item">
                     <div className="ma_img">
                         <img src={`${FILE}/${img1}`} />
-                        <div className="best">
-                            <div className="best_icon">BEST{best}</div>
-                        </div>
-                        <div className="gift">
-                            GIFT{gift}
-                        </div>
                     </div>
                     <div className="ma_name">
                         {name}

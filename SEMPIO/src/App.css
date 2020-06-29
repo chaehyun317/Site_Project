@@ -96,7 +96,6 @@ header{
     margin-top: 10px;
     line-height: 24px;
     background-color: #b61c21;
-    color: #fff;
 }
 .topMenu:hover .submenu{
     height: 45px;
