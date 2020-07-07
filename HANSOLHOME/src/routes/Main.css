@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+.wrap{
+    position: relative;
+    min-width: 1280px;
+}
+.sec1{
+    position: relative;
+    margin: 0 auto;
+    padding: 0 50px;
+    min-width: 1180px;
+}
+.banner{
+    min-width: 1180px;
+    height: 690px;
+    background-image: url(../img/bg_main02.jpg);
+    position: relative;
+    /* overflow: hidden; */
+    margin: 0 auto;
+}
