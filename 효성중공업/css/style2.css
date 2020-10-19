@@ -494,6 +494,7 @@ th:last-child{border-right: none;}
 }
 .media_content{
     width: 1000px;
+    height: 1500px;
     margin: 0 auto;
     position: relative;
 }
@@ -574,6 +575,8 @@ th:last-child{border-right: none;}
 }
 .news_wrap{
     padding-top: 20px;
+    height: 950px;
+    background-color: lightgoldenrodyellow;
 }
 .invest_box{
     margin: 0 auto;
@@ -906,3 +909,4 @@ th:last-child{border-right: none;}
     color: #000;
     text-align: left;
 }
+

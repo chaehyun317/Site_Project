@@ -1,4 +1,5 @@
 function News(){
+
     var html = `
         <div class="wrap">
             <div class="sub_v">
@@ -34,7 +35,9 @@ function News(){
                             <button class="news_button"></button>
                         </div>
                     </div>
-                    <div clsaa="news_wrap"></div>
+                    <div class="news_wrap">
+                    
+                    </div>
                 </div>
             </div>
         </div>
