@@ -37,6 +37,9 @@ $(document).ready(function(){
         { id:35, type: 6, name:"든든한끼 장조림", price: 2900, src:"img35.jpg",clickable: false, best:false },
     ];
 
+
+    
+
     var id, name, price, src, clickable, className;
     var html = '', txt = '';
     var view = [];
