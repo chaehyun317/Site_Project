@@ -128,8 +128,8 @@ a{color:#000};
 }
 .location{
     margin-top: 120px;
-    background-color: #929292;
-    height: 40px;
+    /* background-color: #929292;
+    height: 40px; */
 }
 .contents2{
     position: relative;
@@ -494,7 +494,7 @@ th:last-child{border-right: none;}
 }
 .media_content{
     width: 1000px;
-    height: 1500px;
+    /* height: 1500px; */
     margin: 0 auto;
     position: relative;
 }
@@ -575,8 +575,8 @@ th:last-child{border-right: none;}
 }
 .news_wrap{
     padding-top: 20px;
-    height: 950px;
-    background-color: lightgoldenrodyellow;
+    /* height: 950px; */
+    /* background-color: lightgoldenrodyellow; */
 }
 .invest_box{
     margin: 0 auto;
