@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +36,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.1.1",
     "create-react-app": "^3.4.1",
+    "deploy": "^1.0.3",
     "dotenv-webpack": "^1.7.0",
     "lodash": "^4.17.10",
     "react": "^16.13.1",
@@ -44,5 +47,6 @@
     "react-router-dom": "^5.1.2",
     "react-slideshow-image": "^1.4.0",
     "redux": "^4.0.5"
-  }
+  },
+  "homepage": "https://chaehyun317.github.io/Site_Project/"
 }
