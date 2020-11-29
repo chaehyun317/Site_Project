@@ -254,12 +254,6 @@
     position: absolute;
     left: 50%;
     top: 0;
-    animation-name: move;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-}
-@keyframes move{
-    0%{left: 100%;}
 }
 .sec1_txt{
     position: relative;
@@ -268,14 +262,6 @@
     padding-left: 110px;
     padding-top: 25px;
     float: left;
-    /* background: yellowgreen; */
-    animation-name: txt1;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-}
-@keyframes txt1{
-    0%{left: 0;}
-    100%{left: 100%;}
 }
 .sec1_txt span{
     color: #8f172b;
@@ -322,14 +308,6 @@
     padding-right: 10px;
     padding-top: 25px;
     float: right;
-    /* background: #f4f4f4; */
-    animation-name: txt2;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-}
-@keyframes txt2{
-    0%{right: 0;}
-    100%{right: 100%;}
 }
 .sec2_txt span{
     color: #8f172b;
@@ -384,31 +362,6 @@
     float: left;
     position: relative;
 }
-.sec1_left3, .sec3_left3{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.sec1_left4, .sec3_left4{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #6e0000;
-    animation-name: change;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-    transform: translateX(100%);
-    transition: .8s;
-}
-@keyframes change{
-    0%{transform: translateX(-100%); transition: .10s;}
-    100%{transform: translateX(100%); transition: .10s;}
-}
 .sec1_left5{
     height: 480px;
     background-image: url(../img/bnr_20190701090015Czl.jpg);
@@ -427,12 +380,6 @@
     position: absolute;
     right: 50%;
     top: 0;
-    animation-name: move2;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-}
-@keyframes move2{
-    0%{right: 100%;}
 }
 .sec2_right, .sec4_right{
     width: 1130px;
@@ -445,31 +392,6 @@
     height: 375px;
     float: right;
     position: relative;
-}
-.sec2_right3, .sec4_right3{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.sec2_right4, .sec4_right4{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #6e0000;
-    animation-name: change2;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-    transform: translateX(100%);
-    transition: .8s;
-}
-@keyframes change2{
-    0%{transform: translateX(100%); transition: .10s;}
-    100%{transform: translateX(-100%); transition: .10s;}
 }
 .sec2_right5{
     height: 480px;
@@ -602,76 +524,41 @@
     font-family: "Georgia";
     font-weight: 400;
 }
+.sec6_wrap{
+    width: 100%;
+    background-color: #f4f4f4;
+}
 .sec6_inner{
+    width: 1280px;
     height: 500px;
     position: relative;
+    margin: 0 auto;
 }
 .sec6_left{
     width: 50%;
     height: 370px;
-    background: #f4f4f4;
     position: absolute;
-    right: 50%;
     top: 0;
-    animation-name: move2;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-}
-@keyframes move2{
-    0%{right: 100%;}
-}
-.sec6_right{
-    width: 959px;
-    /* width: 1130px; */
-    height: 502px;
-    margin: 0 auto;
-    position: relative;
 }
 .sec6_right2{
-    width: 959px;
+    width: 759px;
     height: 502px;
     float: right;
     position: relative;
 }
-.sec6_right3{
-    position: absolute;
-    right: -50%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.sec6_right4{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #6e0000;
-    animation-name: change2;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-    transform: translateX(-100%);
-    transition: .8s;
-}
-@keyframes change2{
-    0%{transform: translateX(-100%); transition: .10s;}
-    100%{transform: translateX(100%); transition: .10s;}
-}
 .sec6_right5{
     background-image: url(../img/sec6_1.jpg);
+    background-size: cover;
+    background-position: center center;
     height: 502px;
-    width: 959px;
+    width: 759px;
     background-repeat: no-repeat;
-    margin-left: 50%;
 }
 .sec6_txt{
     width: 560px;
     padding-top: 45px;
     float: left;
     position: relative;
-    /* background: yellowgreen; */
-    margin-left: 50%;
 }
 .sec6_txt span{
     color: #8f172b;

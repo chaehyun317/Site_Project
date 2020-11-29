@@ -417,6 +417,24 @@ h4.brand:after{
 .l_txt1{
     margin-top: 0;
 }
+.l_img{
+    width: 862px;
+    height: 220px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img2/menu4_1.jpg);
+}
+.e_img{
+    width: 1132px;
+    height: 238px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img2/menu4_2.jpg);
+    margin: 40px auto;
+}
 .detail_box3{
     text-align: center;
     padding: 80px 0 73px 0;
@@ -541,6 +559,12 @@ h4.brand:after{
 }
 .cook_img{
     float: right;
+    width: 553px;
+    height: 374px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img2/cook_img.jpg);
 }
 .enjoy_box{
     background: #faf9f7;
@@ -582,7 +606,15 @@ h4.brand:after{
     left: 50%;
     top: -50px;
     margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+.r_iconImg1{background-image: url(../img2/r_icon1.png);}
+.r_iconImg2{background-image: url(../img2/r_icon2.png);}
+.r_iconImg3{background-image: url(../img2/r_icon3.png);}
 .step{
     display: block;
     line-height: 1em;
@@ -632,6 +664,14 @@ h4.brand:after{
     font-size: 18px;
     color: #666;
     line-height: 30px;
+}
+.act_img{
+    width: 1132px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img2/act_img2.jpg);
 }
 .txt_act3{
     color: #222;

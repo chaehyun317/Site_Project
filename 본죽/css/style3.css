@@ -286,6 +286,21 @@ th{
 .step_table tbody td{
     color: #444;
 }
+.m_img{
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 113px;
+    background-size: cover;
+    background-position: center center;
+    width: 113px;
+}
+.mImg1{background-image: url(../img2/menu5_2.jpg);}
+.mImg2{background-image: url(../img2/menu5_3.jpg);}
+.mImg3{background-image: url(../img2/menu5_4.jpg);}
+.mImg4{background-image: url(../img2/menu5_5.jpg);}
+.mImg5{background-image: url(../img2/menu5_6.jpg);}
+.mImg6{background-image: url(../img2/menu5_7.jpg);}
+.mImg7{background-image: url(../img2/menu5_8.jpg);}
 .section2{
     padding-top: 20px;
     background-image: url(../img2/menu5_bg.jpg);
